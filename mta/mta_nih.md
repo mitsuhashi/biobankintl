@@ -22,12 +22,9 @@
 * 3. Representations of Researcher
     * a. Researcher represents and warrants that (i) it is duly incorporated or organized, validly existing and in good standing under the laws of the jurisdiction of its incorporation or organization; (ii) it has the power, authority and legal right to enter into this Agreement and to perform the activities contemplated hereunder, and that it has taken all necessary corporate action to authorize execution of this Agreement to the extent required; (iii) it has obtained or will obtain, to the extent required, all necessary consents, approvals and authorizations of governmental or regulatory authorities required to be obtained related to the performance of this Agreement and the Research; and (iv) the execution and delivery of this Agreement will not conflict with or violate any requirement of any applicable law or regulation and does not conflict with or constitute a default under any contractual obligation enforceable against it.
     * b. [Depending on the nature of the Data, it may be advisable to add detailed security requirements for Researcher to follow, e.g., use of encryption, password security requirements, separation of Data from other datasets, linking Data with other datasets. Security requirements also may be set forth in a Registry policy cross-referenced here].
-* 4. Limitation of Liability
-    * [May consider including a cap on liability/damages].
-* 5. Indemnification
-    * [May consider including indemnification language (e.g., "Researcher shall indemnify, defend, and hold harmless Registry and its officers, employees, agents, and representatives from and against any and all claims, damages, losses, fees, expenses, and liability arising from use of the Data."];
-* 6. Disclaimer
-    * [May consider including a disclaimer of warranties related to the accuracy, integrity, reliability, or completeness of data, as well as a disclaimer of standard warranties of title, non- infringement, merchantability, fitness for a particular purpose. May also consider adding language so it is clear that underlying registry data contributors have no responsibilities regarding the Data.]
+* 4. Limitation of Liability [May consider including a cap on liability/damages].
+* 5. Indemnification [May consider including indemnification language (e.g., "Researcher shall indemnify, defend, and hold harmless Registry and its officers, employees, agents, and representatives from and against any and all claims, damages, losses, fees, expenses, and liability arising from use of the Data."];
+* 6. Disclaimer [May consider including a disclaimer of warranties related to the accuracy, integrity, reliability, or completeness of data, as well as a disclaimer of standard warranties of title, non- infringement, merchantability, fitness for a particular purpose. May also consider adding language so it is clear that underlying registry data contributors have no responsibilities regarding the Data.]
 * 7. Data Ownership; Confidentiality
     * a. All Data is and shall remain the sole and exclusive property of Registry. No ownership rights in or to the Data are transferred to Researcher hereunder.
     * b. Researcher agrees that it will not disclose to others or use for its own benefit or the benefit of others, any Data or other Confidential Information disclosed by Registry in the course of this Agreement. For purposes of this Agreement, "Confidential Information" shall mean methods, processes, know-how, policies, procedures, templates, and other non-public confidential information of Registry. All Confidential Information is and shall remain the confidential property of Registry. Researcher shall keep the Confidential Information in strict confidence and may not use or otherwise disclose the Confidential Information to any third party without the prior written consent of Registry. Researcher shall notify Registry within [insert timeframe, e.g., two (2) business days] of any uses or disclosures of Confidential Information not permitted by this Agreement.
@@ -40,8 +37,7 @@
 * 9. Publications
     * a. [Registry may insert its desired publication requirements or otherwise attach or cross-reference its policy governing publications].
     * b. [Registry may consider adding specific attribution requirements, to ensure that all references of Registry as the source of Data are accurate and consistent in any publications].
-* 10. Miscellaneous
-    * [Registry may consider adding customary contract boilerplate, such as clauses related to assignment, notices, survival, counterparts, force majeure.]
+* 10. Miscellaneous [Registry may consider adding customary contract boilerplate, such as clauses related to assignment, notices, survival, counterparts, force majeure.]
 * IN WITNESS WHEREOF, the duly authorized representatives of the parties hereto have executed this Agreement as of the Effective Date.
 * REGISTRY
     * By:
