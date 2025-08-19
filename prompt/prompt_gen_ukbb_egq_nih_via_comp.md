@@ -2,10 +2,13 @@
 
 ### 入力について
 UKBB, EGA, NIHのMTAの条文を比較した比較表です。以下のどれかがアップロードされます。
-comp_ukbb_ega_nih_gemini_1-6.md
-comp_ukbb_ega_nih_gemini_7-12.md
-comp_ukbb_ega_nih_gemini_13-.md
-markdown形式の箇条書きでUKBB-EGA-NIH対応表、EGA-NIH対応表、NIHのみの条文の順になっています。
+comp_ukbb_ega_nih_gemini_1-3.md
+comp_ukbb_ega_nih_gemini_4-6.md
+comp_ukbb_ega_nih_gemini_7-9.md
+comp_ukbb_ega_nih_gemini_10-12.md
+comp_ukbb_ega_nih_gemini_13-15.md
+comp_ukbb_ega_nih_gemini_16-17.md
+markdown形式の箇条書きです。
 
 ### 処理の内容について
 比較表の内容からUKBB, EGA, NIHのUNIONをとった統合MTAを作成してください。
@@ -27,6 +30,3 @@ markdown形式の箇条書きでUKBB-EGA-NIH対応表、EGA-NIH対応表、NIH�
 
 また、UKBBになく、EGAまたはNIHに記載されている内容に該当する場所を条文（英）と条文（日）でハイライトしてください。
 条文、基になった条文の先頭には必ず条文番号をつけてください。
-
-### 参考：比較表から統合したUKBB-EGA-NIH条文を作成するプロンプト
-参考：比較表を作成するプロンプト:prompt_comp_ukbb_ega_nih.md
