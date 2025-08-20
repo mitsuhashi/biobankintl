@@ -1,11 +1,3 @@
-### 各MTAの最後の条文
-
-* **UK Biobank (mta_ukbb_10-12.md):** 12.5 Termination or expiry of this MTA shall not affect the rights and obligations of the parties accrued at the date or termination or expiry.
-* **European Genome-phenome Archive (mta_ega.md):** 19. This agreement (and any dispute, controversy, proceedings or claim of whatever nature arising out of this agreement or its formation) shall be construed, interpreted and governed by the laws of England and Wales and shall be subject to the exclusive jurisdiction of the English courts.
-* **NIH (mta_nih.md):** EXHIBIT A Data
-
-***
-
 ### UK Biobank (UKBB)の条文と対応するEGAおよびNIHの条文
 
 * **UKBBの条文（英）:** 10.1 The parties agree that: 10.1.1 subject to clauses 10.2, 10.3 and 10.4, UK Biobank’s maximum aggregate Liability under this MTA and/or in relation to the Approved Research Project shall be limited to the Access Charges paid or payable by the Applicant to UK Biobank (whether or not invoiced to the Applicant) in relation to the Approved Research Project; and 10.1.2 subject to clauses 10.2, 10.3 and 10.5, the Applicant's maximum aggregate Liability under this MTA and/or in relation to the Approved Research Project shall be limited to the Access Charges paid or payable by the Applicant to UK Biobank (whether or not invoiced to the Applicant) in relation to the Approved Research Project.

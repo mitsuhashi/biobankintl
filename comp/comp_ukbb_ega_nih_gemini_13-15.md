@@ -1,13 +1,3 @@
-各MTAの最後の条文は以下の通りです。
-
-* **UK Biobank (UKBB):** Clause 15.3, which states that the provisions of Clause 15 shall not affect any other right which any party may have to terminate this MTA.
-* **European Genome-phenome Archive (EGA):** Clause 19 states that the agreement and any dispute arising from it shall be governed by the laws of England and Wales and be subject to the exclusive jurisdiction of the English courts.
-* **National Institutes of Health (NIH):** Clause 10, which covers miscellaneous contract boilerplate, such as clauses related to assignment, notices, survival, counterparts, and force majeure.
-
-***
-
-以下は、UKBBの条文と、内容的に対応するEGAおよびNIHの条文の比較です。
-
 ### 13. Notices
 ### 13.1 Notices required under this MTA shall be in writing and shall be: 13.1.1 sent by email to the addresses set out below; or 13.1.2 (in the event of failure to deliver an email) by post to the registered address of UK Biobank or the Applicant.
 * 対応するEGAの条文はありません
