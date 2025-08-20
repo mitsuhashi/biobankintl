@@ -1,10 +1,3 @@
-### 各MTAの最後の条文
-
-* **UK Biobank (mta_ukbb_7-9.md):** 9.6 The Applicant shall not process any Participant Level Data (nor permit any Participant Level Data to be processed) in a territory outside of the UK (or where clause 9.4 applies, where processing occurs in a subsequent territory) unless it has taken such measures as are necessary to ensure the transfer is in compliance with Data Protection Legislation.
-* **European Genome-phenome Archive (mta_ega.md):** 19. This agreement (and any dispute, controversy, proceedings or claim of whatever nature arising out of this agreement or its formation) shall be construed, interpreted and governed by the laws of England and Wales and shall be subject to the exclusive jurisdiction of the English courts.
-* **NIH (mta_nih.md):** EXHIBIT A Data
-
-***
 
 ### UK Biobank (UKBB)の条文と対応するEGAおよびNIHの条文
 
