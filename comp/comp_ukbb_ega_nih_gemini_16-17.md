@@ -1,11 +1,3 @@
-提供された3つのMTAファイルの最後の条文は以下の通りです。
-
-* **UKBB**: 17.10 このMTAおよび、それに起因または関連する紛争や請求（非契約上の紛争や請求を含む）は、イングランドおよびウェールズの法律に準拠して解釈されるものとします。上記の第16条に従い、両当事者は、本MTAまたはその主題もしくは形成から生じるいかなる訴訟、訴え、手続き、または紛争に対しても、イングランドの裁判所が専属管轄権を有することに取消不能な同意をします。
-* **EGA**: 19. この合意（およびこの合意から、またはその形成から生じるいかなる性質の紛争、論争、訴訟、または請求）は、イングランドおよびウェールズの法律に準拠して解釈および統治され、イングランドの裁判所の専属管轄に服するものとします。
-* **NIH**: 10. Miscellaneous [Registry may consider adding customary contract boilerplate, such as clauses related to assignment, notices, survival, counterparts, force majeure.]
-
-***
-
 ### 16. Dispute resolution
   * **対応するEGAの条文**: なし
   * **対応するNIHの条文**: なし
