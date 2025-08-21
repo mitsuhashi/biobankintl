@@ -2,6 +2,7 @@
 アップロードした３つのファイルは、UKBBとEGA、NIHの3つのMaterial Transfer Agreement (MTA)のmarkdownです。
 
 UKBBのMTAは、箇条書きになっていて、条文番号が階層関係を表現しています。例えば、1.1 は 1の子要素です。１回のリクエストでこのファイルのどれか１つを入力します。
+mta_ukbb.md （全文）
 mta_ukbb_1-3.md (1-3章)
 mta_ukbb_4-6.md (4-6章)
 mta_ukbb_7-9.md (7-10章)
