@@ -1,79 +1,108 @@
 ## UKBB、EGA、NIHのMTAの条文対応表と統合条文の作成
 
-### プロンプトをfixするまでテストランについて
+### プロンプトをfixするまでのテストランについて
 
 * まずはテストランモードを実施してください。
-* ステップ１及び２ともUKBBの1.1から3.9までについて実施してください。
+* ステップ１及び２ともUKBBの1.1から3.9まで及びステップ3: 残存条文の処理を実施してください。
 * 改良すべきプロンプトの修正案を出力してください。
 
-### 処理の概要
+### プロンプトの全体構成
 
-#### ステップ１. UKBB、EGA、NIHのMTAの条文対応表の作成
-UKBBとEGA、NIHの3つのバイオバンク向けのMaterial Transfer Agreement (MTA)の条文を１条文単位で比較して内容的に対応する条文の対応表を出力してください。
+#### 1. 役割と目的の定義
+あなたは、複数のMTA（Material Transfer Agreement）を比較・分析し、統合する専門家です。目的は、UKBB, EGA, NIHの3つのMTAから共通項と相違点を抽出し、それらを網羅した汎用的な「統合条文」を作成することです。
 
-#### ステップ2. 統合条文の作成
-* ステップ１の分析を基に対応する条文が存在する場合は、それらの内容を全て含む条文（以下、統合条文）を出力してください。
+#### 2. 入力ファイル定義
+*   UKBB: `mta_ukbb.md`
+*   EGA: `mta_ega.md`
+*   NIH: `mta_nih.md`
 
-#### その他
-* バッファサイズの上限を超えてしまって３つのファイルを原文通りに記憶できないなどの理由で内容を変更する必要が場合はその旨を出力してください(Gemini Pro 2.5ではないはず）。
-* プロンプトの指示に対してどのように対応したかを説明してください。
-* プロンプトの内容について質問がある場合は質問してください。プロンプトを書き換えます。
+#### 3. 用語統一の事前定義
+統合条文の作成に先立ち、以下の**統一用語対応表**をすべての処理の前提として使用してください。これにより、出力の一貫性を確保します。
 
-### 入力について
-* アップロードした３つのファイルは、UKBBとEGA、NIHの3つのMaterial Transfer Agreement (MTA)の条文です。バイオバンク名とアップロードしたファイル名の対応は以下のとおりです。
-  * UKBB: mta_ukbb.md
-  * EGA: mta_ega.md
-  * NIH: mta_nih.md
-* 各ファイルはmarkdown形式の箇条書きです。
-
-#### MTAの階層構造について
-* 箇条書きの構造と条文番号が階層関係を表現しています。例えば、1.1 は 1の子要素です。
-* 条文がコロンで終了している条文は、その子階層と関係があることを考慮して条文の意味を理解してください。以下が階層構造の例です。
-  *   1.2 UK Biobank warrants to the Applicant that for the purposes of this MTA:
-      *   1.2.1 it is entitled to supply the Materials to the Applicant;
-      *   1.2.2 consent to take part in UK Biobank has been obtained from the Participants and further, consent under the Human Tissue Act 2004, has been obtained from the relevant Participants; and
-      *   1.2.3 the use of the Materials for the Approved Research Project falls within UK Biobank's generic Research Tissue Bank (RTB) approval from the NHS North West REC, available here.
-  *   **6. The User Institution agrees that the Data Producers, and all other parties involved in the creation, funding or protection of these Data:**
-      *   a) make no warranty or representation, express or implied as to the accuracy, quality or comprehensiveness of these Data;
-      *   b) exclude to the fullest extent permitted by law all liability for actions, claims, proceedings, demands, losses (including but not limited to loss of profit), costs, awards damages and payments made by the Recipient that may arise (whether directly or indirectly) in any way whatsoever from the Recipients use of these Data or from the unavailability of, or break in access to, these Data for whatever reason and;
-      *   c) bear no responsibility for the further analysis or interpretation of these Data.
-*   **2. Cost Jor No Cost**
-    *   a. Registry is making the Data available to Researcher at no cost to Researcher. [If payment is desired, it may be beneficial to add payment terms, e.g., invoicing procedure, payment due dates].
-    *   b. Researcher bears all costs and expenses incurred by Researcher to access and use the Data, and conduct the Research.
-* 条文番号は一意になるようにつけてください。上の例の場合、1.2.1はそのままで一意ですが、2番目と3番目の例は 6.a, 2.aのように親階層の番号を先頭につけてください。
-
-###　処理内容について
-
-#### ステップ１. UKBB、EGA、NIHのMTAの条文対応表の作成
-* UKBBの第２階層の条文（例：1.1 UK Biobank ...）を1.1から１条ずつ読み込み、内容的に対応するEGA、NIHの条文を探してください。
-* 各MTAの条文がコンマで終了しその下の階層の条文と一体化している場合は、コンマ前後の文章を統合して意味が通じるようにしてください。
-* UKBBの条文に対して複数のEGA, NIHの条文が対応する場合は１対応ずつ出力してください。
-* 対応関係が存在する場合は、対応する条文の一致点と不一致点をそれぞれ出力してください。
-* UKBBの条文に対応するEGA, NIHの条文が存在しない時はUKBBの条文だけを出力してください。
-* UKBBの条文を全て出力した後、UKBBに対応しなかったEGAの条文に対して、NIHの条文との対応関係を探し、UKBBとの比較と同様の処理をしてください。
-* EGAの条文を全て出力した後、UKBBにもEGAにも対応しなかったNIHの条文との対応関係を出力してください。
-* UKBB, EGA, NIHの条文は原文通り全て出力してください。
-* UKBB, EGA, NIHの条文には英国やEU、米国の法制度などのローカルな内容と考えられる記述を赤字にしてください。
-
-#### ステップ2. 統合条文の作成
-* 対応するUKBB, EGA、NIHの条文の内容を含む統合条文を作成してください。
-* UKBB、EGA、NIHの条文で表記が違うが同じ意味の語句（主語や目的語など）を同じ表記に揃えてください。統合条文用の語句は提案してください。
-* UKBB、EGA、NIHで、統一した語句の対応表を出力してください。
-* 不一致点があり統合できない場合は、{条文案1, 条文案2...}のようにカッコ書きで列挙してください。
-* 統合条文のどの部分がどのMTAの原文に基づいているかを明確に追跡可能にするために、UKBB由来の文言は黒色、EGA由来の文言は青色、NIH由来の文言は緑色にしてください。由来がはっきりしない場合は赤色にしてください。
+| 統合用語 | UKBB | EGA | NIH |
+| :--- | :--- | :--- | :--- |
+| **Data** | Materials | Data | dataset(s) |
+| **Applicant** | Applicant | User Institution | Requester |
+| **Principal Investigator (PI)** | Applicant PI | User | PI |
+| **Approved Researchers** | Applicant Researchers | Authorised Personnel | Approved Users |
+| **Approved Research Project** | Approved Research Project | Project | approved research project |
+| **Data Provider** | UK Biobank | Data Producers | NIH, Submitting Investigator(s) |
+| **Intellectual Property (IP)** | Intellectual Property Rights (IPRs) | intellectual property | intellectual property (IP) |
+| **Breach**|	breach|	breach|	Policy Compliance Violations|
+| **Termination**|	terminate|	terminate|	terminate, Project Close-out|
+| **Publication of Findings** |	publication of Findings|	Publications	Dissemination of Research Findings|
+| **Data Derivatives**|	Results Data, Other Data|	material derived from these Data|	Data Derivatives|
 
 
-###　出力について
+#### 4. 処理ステップの詳細化
 
-#### 
+**ステップ1: 条文の構造化とマッピング**
+*   各MTAファイルを読み込み、階層構造を維持したまま条文を解析してください。第2階層の条文（例：1.1, 1.2）を1行として扱い、その下位の条文（例：1.2.1, 1.2.2）はその行のセル内に改行を挟んで全て含めることで、一つの論理単位としてください。
+*   UKBBの各条文（例：1.1）が持つ中心的な法的意味を基準として、EGAとNIHから関連性の高い条文をマッピングしてください。UKBB1条文に対して、複数の条文がマッピングされても構いません。完全一致は稀であるため、部分的な一致や関連する規定（例：ある行為を禁止する条文と、その行為の結果責任を問う条文）も対象とします。
+*   マッピング結果を内部的に保持してください。
+*   主要コンセプトリストは、マッピング先の条文を探す際の思考のヒントとして活用してください。
+*   UKBBの各条文が持つ中心的な法的意味を分析し、「主要コンセプトリスト」から最も関連性の高いキーワードを内部的なタグとして1～3個付与してください。付与できない場合は無理にマッピングする必要はありません。
+*   次に、EGAとNIHの全条文をスキャンし、同じタグが付与されうる関連性の高い条文を検索・マッピングしてください。これにより、網羅的かつ体系的な対応付けを行います。
+*   タグをマッピングできない場合は条文の意味からマッピングしてください。
 
-* 出力表はHTMLで出力してください。
-* 出力表の行は以下の内容を出力してください。列名はヘッダ行の値です。
-* 各列指定した言語で出力してください。
-* UKBBの条文番号順→EGAの条文番号順→NIHの条文順に出力してください。
+**主要コンセプトリスト**
+
+*  1. 契約の基本事項
+    *   **1.1. Data/Materialsの提供:** 提供の合意、範囲、期間に関する規定。
+    *   **1.2. 提供者の保証と免責:** 提供者が保証する事項（例：提供権限）と、保証しない事項（例：データの品質、"as is"原則）。
+    *   **1.3. 契約期間と終了:** 契約の有効期間、更新、終了手続き、終了後のデータ破棄に関する規定。
+    *   **1.4. 料金:** データアクセスに伴う費用に関する規定。
+*  2. 利用者の責務と利用条件
+    *   **2.1. 利用目的・範囲の制限:** 承認された研究プロジェクト、研究目的に限定する規定。
+    *   **2.2. 利用者の限定:** 承認された研究者（PI、共同研究者等）に利用を限定する規定。
+    *   **2.3. 第三者への共有・移転の禁止:** 承認されていない第三者へのデータ共有、販売、譲渡等を禁止する規定。
+    *   **2.4. 法令・倫理遵守:** 関連法規、ガイドライン、倫理委員会の承認等を遵守する義務。
+    *   **2.5. 参加者の非特定化:** 研究参加者を特定しようとする行為の禁止。
+*  3. データセキュリティとコンプライアンス
+    *   **3.1. データセキュリティ:** 適切なセキュリティ基準の維持、インシデント発生時の報告義務。
+    *   **3.2. 秘密保持:** データや関連情報の機密性を保持する義務。
+    *   **3.3. 監査・報告:** 定期的な進捗報告（年次報告等）の義務や、提供者による監査の権利。
+    *   **3.4. 契約違反時の措置:** 契約違反が認められた場合のアクセス停止、データ破棄要求などの罰則規定。
+*  4. 研究成果の取り扱い
+    *   **4.1. 成果の公開と謝辞:** 研究成果の公表義務、謝辞の記載方法に関する規定。
+    *   **4.2. 知的財産権（IP）:** 元データ、生成データ、発明に関する知的財産権の帰属やライセンスに関する規定。
+*  5. 一般条項
+    *   **5.1. 責任の制限:** 契約違反等によって生じる損害賠償責任の上限に関する規定。
+    *   **5.2. 下請け・委託:** 第三者への処理委託（クラウド利用等）に関する条件や手続き。
+    *   **5.3. 紛争解決:** 当事者間で紛争が生じた場合の解決手続き（協議、調停、裁判管轄等）。
+    *   **5.4. その他:** 通知方法、不可抗力、完全合意条項など。
+
+**ステップ2: 比較分析と統合条文の作成**
+*   ステップ1のマッピング結果に基づき、UKBBの条文順に一行ずつ処理を行います。
+*   **対応する条文が存在する場合:**
+    *   **一致点:** 条文間で共通する法的・倫理的な原則を簡潔に記述してください。
+    *   **不一致点:** 規定の範囲、表現の強さ、手続きの有無など、具体的な相違点を記述してください。
+    *   **統合条文:**
+        *   共通する内容は、最も包括的または標準的と思われる表現にまとめてください。
+        *   不一致点のうち、補完しあえる内容（例: EGAの手続きとNIHの例外規定）は、追記する形で一つの条文に統合してください。
+        *   方針が根本的に矛盾・対立する内容（例: 知的財産の扱い）は、統合せず `{案1: [MTA Aの趣旨], 案2: [MTA Bの趣旨]}` の形式で併記してください。
+        * 統合条文内での文言の由来を明確にするため、統合条文を作成する際、以下の優先順位に従って色分けを厳密に適用してください。英語と日本語の両方に適用してください。
+            * 由来の明確な特徴的文言（優先度: 高）: 各MTAに由来する特徴的、またはその条文の法的意味の中核をなすフレーズを特定し、それぞれの色（UKBB由来: color: black;, EGA由来: color: blue;, NIH由来: color: green;）を適用します。
+            * 再構成・補完部分（優先度: 低）: 由来の明確な特徴的文言に該当しない部分、すなわち、複数の条文の意味を要約・再構成した文言や、条文をスムーズにつなぐための構文（'and', 'or', 'provided that'など）は、color: red;を適用します。
+    *   **統合手順：** 以下のいずれかのパターンを参考に、どのような論理で条文を構築したかを明確に説明してください。
+            *【最大公約数パターン】: 3つのMTAに共通する中核的な原則を抽出し、それを基本条文としました。（例：免責条項）
+            * 【積み上げパターン】: MTA Aの基本的な規定を骨子とし、そこにMTA Bの具体的な手続きやMTA Cの例外規定を追記・補完する形で、より網羅的な条文を構築しました。（例：データ利用目的）
+            * 【最厳格ルール採用パターン】: 各MTAの規定の中で、利用者の義務や禁止事項が最も厳しいものを採用して統合しました。（例：第三者提供の禁止）
+            * 【選択肢パターン】: 知的財産権の扱いのように、各MTAの方針が根本的に対立し、一つの条文に統合することが不可能なため、{案1: [MTA Aの趣旨], 案2: [MTA Bの趣旨]}の形式で併記しました。
+*   **対応する条文が存在しない場合:**
+    *    UKBBのMTAの条文を統合条文として記載し、「一致点」「不一致点」は「他MTAに直接対応する条文なし」などと記述してください。
+    *   統合条文は、元の条文を一般化（固有名詞を統一用語に置き換えるなど）して作成してください。
+
+**ステップ3: 残存条文の処理 **
+*   UKBBの全条文を処理した後、まだどの条文にも対応付けられていないEGAおよびNIHの条文を抽出し、テーブルの末尾に追加してください。
+*   EGAとNIHの間でもステップ1と同様に対応関係を抽出してください。
+
+**ステップ4: 出力**
+*   最終結果を**単一の完全なHTMLコードブロック**として出力してください。
+*   テーブルの各列の定義は以下の通りです。
 
 |列名|値の内容|言語|
-|---|---|---|---|
+|---|---|---|
 |外国統合No.|外国統合MTA条文|英語|
 |外国統合英|統合条文|英語|
 |外国統合日|統合条文|日本語|
@@ -82,29 +111,32 @@ UKBBとEGA、NIHの3つのバイオバンク向けのMaterial Transfer Agreement
 |UKBB英|UKBB原文|英語|
 |UKBB日|UKBB原文|日本語|
 |EGA No.|EGA条文番号|英語|
-|EGA英|UKBB原文|英語|
-|EGA日|UKBB原文|日本語|
+|EGA英|EGA原文|英語|
+|EGA日|EGA原文|日本語|
 |NIH No.|EGA条文番号|英語|
 |NIH英|UKBB原文|英語|
 |NIH日|UKBB原文|日本語|
 |一致点|対応する条文の一致点|日本語|
 |不一致点|対応する条文不一致点|日本語|
 
+*   原文を表示する条文中で、特定の国・地域に固有の法律、規制、機関名（例: `Human Tissue Act 2004`, `NIH`, `EU embargo`）に関する文言は太字にしてください。
+*   最終出力前に、プロンプトの指示（特に、全条文の網羅、色分け、HTML形式など）がすべて満たされているか自己チェックしてください。
+
 ## 最終出力前のチェックリスト
 以下のすべての項目が「はい」であることを確認してから、最終的なHTMLテーブルを出力してください。
-[ ] バッファサイズの上限を超えてしまって３つのファイルを原文通りに記憶できないなどの理由で入力内容を割愛していませんか。
-[ ] 表はHTML形式で出力されていますか？
-[ ] ヘッダー行は指定された14列（外国統合No., 外国統合英, ... 不一致点）をすべて含んでいますか？
-[ ] UKBBの第2階層の条文（1.1から17.10まで）が、それぞれ独立した行としてすべて出力されていますか？（条文のまとめや省略はありませんか？）
-[ ] UKBBの条文をすべて処理した後、UKBBに対応しなかったEGAおよびNIHの単独条文が、テーブルの末尾に追加されていますか？
-[ ] 「外国統合英」列の色分けルールは守られていますか？
-[ ] UKBB由来の文言は黒色ですか？
-[ ] EGA由来の特徴的な文言（例: 'moratorium period'）は青色で反映されていますか？
-[ ] NIH由来の特徴的な文言（例: 'indemnify', 'IRB permission'）は緑色で反映されていますか？
-[ ] 複数のMTAに共通する概念や、統合のために新しく構成した文言は赤色ですか？
-[ ] 内容が競合し統合できない条文は、「外国統合英」列で{案1, 案2}の形式で併記されていますか？
-[ ] すべての条文について、日本語訳の列（外国統合日, UKBB日, EGA日, NIH日）は埋まっていますか？（対応なしの場合は除く）
-[ ] 「一致点」「不一致点」の列は、具体的かつ明確な言葉で記述されていますか？
-[ ] 出力は途中で途切れることなく、単一の完全なHTMLコードブロックとして生成されていますか？
+* [ ] バッファサイズの上限を超えてしまって３つのファイルを原文通りに記憶できないなどの理由で入力内容を割愛していませんか。
+* [ ] 表はHTML形式で出力されていますか？
+* [ ] ヘッダー行は指定された14列（外国統合No., 外国統合英, ... 不一致点）をすべて含んでいますか？
+* [ ] UKBBの第2階層の条文（1.1から17.10まで）が、それぞれ独立した行としてすべて出力されていますか？（条文のまとめや省略はありませんか？）
+* [ ] UKBBの条文をすべて処理した後、UKBBに対応しなかったEGAおよびNIHの単独条文が、テーブルの末尾に追加されていますか？
+* [ ] 「外国統合英」列の色分けルールは守られていますか？
+   *   UKBB由来の文言は黒色ですか？
+   *   EGA由来の特徴的な文言（例: 'moratorium period'）は青色で反映されていますか？
+   *   NIH由来の特徴的な文言（例: 'indemnify', 'IRB permission'）は緑色で反映されていますか？
+   *   複数のMTAに共通する概念や、統合のために新しく構成した文言は赤色ですか？
+* [ ] 内容が競合し統合できない条文は、「外国統合英」列で{案1, 案2}の形式で併記されていますか？
+* [ ] すべての条文について、日本語訳の列（外国統合日, UKBB日, EGA日, NIH日）は埋まっていますか？（対応なしの場合は除く）
+* [ ] 「一致点」「不一致点」の列は、具体的かつ明確な言葉で記述されていますか？
+* [ ] 出力は途中で途切れることなく、単一の完全なHTMLコードブロックとして生成されていますか？
 
 以上、よろしくお願いいたします。
