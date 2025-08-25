@@ -3,313 +3,381 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>統合MTA条文比較分析表</title>
+<title>MTA比較分析・統合条文</title>
 <style>
   body { font-family: sans-serif; }
   table { border-collapse: collapse; width: 100%; font-size: 12px; }
-  th, td { border: 1px solid #ddd; padding: 8px; text-align: left; vertical-align: top; }
+  th, td { border: 1px solid #dddddd; text-align: left; padding: 8px; vertical-align: top; }
   th { background-color: #f2f2f2; }
-  .note { font-size: 10px; color: #555; }
+  .en { font-family: "Courier New", Courier, monospace; }
 </style>
 </head>
 <body>
 <table border="1">
-    <thead>
-        <tr>
-            <th>外国統合No.</th>
-            <th>外国統合英</th>
-            <th>外国統合日</th>
-            <th>統合手順</th>
-            <th>UKBB No.</th>
-            <th>UKBB英</th>
-            <th>UKBB日</th>
-            <th>EGA No.</th>
-            <th>EGA英</th>
-            <th>EGA日</th>
-            <th>NIH No.</th>
-            <th>NIH英</th>
-            <th>NIH日</th>
-            <th>一致点</th>
-            <th>不一致点</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>1.1</td>
-            <td style="color: red;">The <span style="color: black;">Data Provider agrees to supply the Data to the Applicant</span>, <span style-color: red;">subject to the provisions of this Agreement, for use by Approved Researchers solely in connection with the Approved Research Project.</span></td>
-            <td>データ提供者は、承認された研究者が承認された研究プロジェクトに関連してのみ使用するために、本契約の規定に従って、申請者にデータを提供することに同意します。</td>
-            <td>【積み上げパターン】: UKBBの基本的な提供合意を骨子とし、NIHの「承認された研究プロジェクトでのみ」という利用目的の限定を加えて、契約の基本原則を明確化しました。</td>
-            <td>1.1</td>
-            <td>UK Biobank agrees to supply the Materials to the Applicant in the timeframe and manner set out in this MTA, subject to the provisions of this MTA.</td>
-            <td>UK Biobankは、本MTAの規定に従い、本MTAに定める期間および方法で、申請者にマテリアルを供給することに同意します。</td>
-            <td>N/A</td>
-            <td>N/A</td>
-            <td>N/A</td>
-            <td>1.1, 1.2</td>
-            <td>1.1. The Requester agrees that if access is approved, (1) the PI named in the DAR and (2) those named in the "Senior/Key Person Profile" section of the DAR...shall become Approved Users of the requested dataset(s).<br>1.2. Research use will occur solely in connection with the approved research project described in the DAR...</td>
-            <td>1.1. 申請者は、アクセスが承認された場合、(1) DARに記載されたPI、および(2) DARの「上級/主要人物プロフィール」セクションに記載された者...が、要求されたデータセットの承認された利用者となることに同意します。<br>1.2. 研究利用は、DARに記載された承認済みの研究プロジェクトに関連してのみ行われます...</td>
-            <td>データが申請者に提供されるという基本的な合意が存在する点で一致しています。</td>
-            <td>UKBBはデータ提供の「合意」を主体として記述していますが、NIHは申請者がアクセス承認後の「利用者」となることを主体として記述しており、表現の視点が異なります。EGAには直接対応する供給合意条項がありません。</td>
-        </tr>
-        <tr>
-            <td>1.2</td>
-            <td style="color: red;">{案1: <span style="color: black;">The Data Provider warrants to the Applicant that it is entitled to supply the Data and that necessary consents from participants and ethics approvals have been obtained for the use of the Data for the Approved Research Project.</span>}<br>{案2: <span style="color: blue;">The Data Provider makes no warranty or representation, express or implied, as to the accuracy, quality, or comprehensiveness of the Data.</span>}</td>
-            <td>{案1: データ提供者は、データを供給する権限があること、および承認された研究プロジェクトのためのデータの使用に関して、参加者からの必要な同意および倫理承認が得られていることを申請者に保証します。}<br>{案2: データ提供者は、データの正確性、品質、または網羅性に関して、明示的または黙示的を問わず、いかなる保証も表明も行いません。}</td>
-            <td>【選択肢パターン】: UKBBが提供権限や同意取得を保証する一方、EGAとNIHは保証を明確に否認しており、方針が根本的に対立するため、両案を併記しました。</td>
-            <td>1.2</td>
-            <td>UK Biobank warrants to the Applicant that for the purposes of this MTA: 1.2.1 it is entitled to supply the Materials to the Applicant; 1.2.2 consent to take part in UK Biobank has been obtained from the Participants and further, consent under the <b>Human Tissue Act 2004</b>, has been obtained from the relevant Participants; and 1.2.3 the use of the Materials for the Approved Research Project falls within UK Biobank's generic Research Tissue Bank (RTB) approval from the <b>NHS North West REC</b>, available here.</td>
-            <td>UK Biobankは、本MTAの目的のため、申請者に対して以下のことを保証します。1.2.1 UK Biobankが申請者にマテリアルを供給する権限を有すること。1.2.2 参加者からUK Biobankへの参加同意が得られており、さらに<b>2004年ヒト組織法</b>に基づく同意が関連する参加者から得られていること。1.2.3 承認された研究プロジェクトのためのマテリアルの使用が、<b>NHS North West REC</b>から得たUK Biobankの一般的な研究組織バンク（RTB）承認の範囲内であること（こちらで閲覧可能）。</td>
-            <td>6.a</td>
-            <td>make no warranty or representation, express or implied as to the accuracy, quality or comprehensiveness of these Data;</td>
-            <td>これらのデータの正確性、品質、または網羅性について、明示的または黙示的を問わず、いかなる保証も表明も行いません。</td>
-            <td>12.1, 12.2</td>
-            <td>12.1. The Requester and Approved Users acknowledge that although all reasonable efforts have been taken to ensure the accuracy and reliability of data... the <b>NIH</b> and Submitting Investigator(s) do not and cannot warrant the results that may be obtained by using any data included therein.<br>12.2. <b>NIH</b> and all contributors to these datasets disclaim all warranties as to performance or fitness of the data for any particular purpose.</td>
-            <td>12.1. 申請者および承認された利用者は、データの正確性と信頼性を確保するためにあらゆる合理的な努力が払われたものの...<b>NIH</b>および提出研究者が、そこに含まれるデータを使用して得られる可能性のある結果を保証するものではなく、また保証できないことを認めます。<br>12.2. <b>NIH</b>およびこれらのデータセットのすべての貢献者は、特定の目的へのデータの性能または適合性に関するすべての保証を否認します。</td>
-            <td>EGAとNIHは、データの品質について保証しない（免責）という点で一致しています。</td>
-            <td>UKBBはデータの提供権限や同意取得という手続きの正当性を積極的に「保証」するのに対し、EGAとNIHは保証条項を設けず、むしろデータの品質に関する「免責」を強調しています。保証の有無という点で明確な対立があります。</td>
-        </tr>
-        <tr>
-            <td>1.3</td>
-            <td style="color: red;">The <span style="color: black;">Data are provided on an "as is" basis without any warranty of satisfactory quality or fitness for a particular purpose or use.</span> <span style="color: green;">The Data Provider and all contributors to the Data disclaim all warranties, express or implied,</span> <span style="color: red;">and shall not be liable for any results or conclusions obtained by using the Data.</span></td>
-            <td>データは「現状有姿」で提供され、満足のいく品質や特定の目的または使用への適合性に関するいかなる保証もありません。データ提供者およびデータのすべての貢献者は、明示的または黙示的を問わず、すべての保証を否認し、データの使用によって得られたいかなる結果または結論についても責任を負わないものとします。</td>
-            <td>【最大公約数パターン】: 3つのMTAすべてが共有する「現状有姿（as is）」および免責の原則を中核とし、各MTAの表現を統合して、包括的な免責条項を作成しました。</td>
-            <td>1.3</td>
-            <td>The Applicant agrees that the Materials are provided on an "as is" basis without any warranty of satisfactory quality or fitness for a particular purpose or use, or that use of the Materials shall not infringe the rights of any third party. Except as expressly stated in this MTA, all warranties, terms and conditions, whether express or implied by statute, common law or otherwise, are excluded to the fullest extent permitted by law.</td>
-            <td>申請者は、マテリアルが「現状有姿」で提供されるものであり、満足のいく品質や特定の目的または使用への適合性、あるいはマテリアルの使用が第三者の権利を侵害しないことについて、いかなる保証もないことに同意します。本MTAで明示的に定められている場合を除き、制定法、慣習法その他による明示または黙示の保証、条件、規定は、法律で認められる最大限の範囲で排除されます。</td>
-            <td>6.a, 6.c</td>
-            <td>a) make no warranty or representation, express or implied as to the accuracy, quality or comprehensiveness of these Data;<br>c) bear no responsibility for the further analysis or interpretation of these Data.</td>
-            <td>a) これらのデータの正確性、品質または網羅性に関して、明示的または黙示的を問わず、いかなる保証も表明も行いません。<br>c) これらのデータのさらなる分析または解釈について一切の責任を負いません。</td>
-            <td>12.1, 12.2</td>
-            <td>12.1. ...the <b>NIH</b> and Submitting Investigator(s) do not and cannot warrant the results that may be obtained by using any data included therein.<br>12.2. <b>NIH</b> and all contributors to these datasets disclaim all warranties as to performance or fitness of the data for any particular purpose.</td>
-            <td>12.1. ...<b>NIH</b>および提出研究者は、そこに含まれるデータを使用して得られる可能性のある結果を保証することはできず、また保証しません。<br>12.2. <b>NIH</b>およびこれらのデータセットのすべての貢献者は、特定の目的のためのデータの性能または適合性に関するすべての保証を否認します。</td>
-            <td>3つのMTAすべてが、データは「現状有姿（as is）」で提供され、データの品質、正確性、特定目的への適合性について、明示的・黙示的を問わず一切保証しないという点で完全に一致しています。</td>
-            <td>UKBBは第三者の権利侵害がないことも保証しないと明記している点が特徴的ですが、全体的な免責の趣旨は共通しています。</td>
-        </tr>
-        <tr>
-            <td>2.1</td>
-            <td style="color: red;">The <span style="color: black;">Data shall only be used to conduct the Approved Research Project</span> <span style="color: green;">and for Research Purposes. Any new use of the Data outside of the Approved Research Project requires submission of a new application.</span> <span style="color: black;">The Data shall not be used for any purpose connected with prohibited weapons, and shall not be transferred to a destination subject to a UN, EU, UK or OSCE embargo.</span></td>
-            <td>データは、承認された研究プロジェクトの実施および研究目的にのみ使用されるものとします。承認された研究プロジェクト以外の新たなデータの使用には、新規の申請が必要です。データは、禁止されている兵器に関連するいかなる目的にも使用してはならず、国連、EU、英国、またはOSCEの禁輸措置の対象となる宛先に移転してはなりません。</td>
-            <td>【積み上げパターン】: すべてのMTAに共通する「承認された研究目的での利用」を基本とし、NIHの「新規利用には再申請が必要」という手続きと、UKBBの「兵器利用や禁輸対象への移転禁止」という具体的な禁止事項を加えて、より網羅的な規定としました。</td>
-            <td>2.1.2, 2.1.3, 2.1.4</td>
-            <td>2.1.2 shall only be used to conduct the Approved Research Project for the Permitted Purpose only;<br>2.1.3 shall not be used for any purpose connected with prohibited weapons (including biological weapons), and shall not be transferred if it is known or suspected that they are intended or likely to be used for such purposes;<br>2.1.4 shall not be transferred to a destination subject to a <b>UN, EU, UK or OSCE embargo</b> where that act would be in breach of the terms of that embargo;</td>
-            <td>2.1.2 許可された目的のために承認された研究プロジェクトを実施するためにのみ使用されること。<br>2.1.3 禁止兵器（生物兵器を含む）に関連するいかなる目的にも使用されず、また、そのような目的に使用されることが意図されているか、またはその可能性があると知られている、または疑われる場合には移転されないこと。<br>2.1.4 <b>国連、EU、英国、またはOSCE</b>の禁輸措置の対象となる宛先へ、その禁輸措置の条項に違反する行為となる場合には移転されないこと。</td>
-            <td>1</td>
-            <td>The User Institution agrees to only use these Data for the purpose of the Project (described in Appendix II) and only for Research Purposes. The User Institution further agrees that it will only use these Data for Research Purposes which are within the limitations (if any) set out in Appendix I.</td>
-            <td>利用者機関は、これらのデータをプロジェクト（付録IIに記載）の目的および研究目的のためにのみ使用することに同意します。利用者機関はさらに、これらのデータを付録Iに定められた制限（もしあれば）の範囲内にある研究目的のためにのみ使用することに同意します。</td>
-            <td>1.2, 1.5</td>
-            <td>1.2. Research use will occur solely in connection with the approved research project described in the DAR...<br>1.5. New uses of these data outside those described in the DAR will require submission of a new DAR.</td>
-            <td>1.2. 研究利用は、DARに記載された承認済みの研究プロジェクトに関連してのみ行われます...<br>1.5. DARに記載された以外のこれらのデータの新たな利用は、新しいDARの提出が必要となります。</td>
-            <td>すべてのMTAが、データの利用目的を承認された研究プロジェクト（Approved Research Project）に厳密に限定する点で一致しています。</td>
-            <td>UKBBは生物兵器への利用や禁輸措置対象国への移転といった、地政学的・安全保障上の具体的な禁止事項を設けている点が特異です。NIHは、目的外の利用には「新しい申請（DAR）」が必要であるという手続き面を明確にしています。</td>
-        </tr>
-        <tr>
-            <td>2.2</td>
-            <td style="color: red;">The <span style="color: black;">Applicant shall not share, sub-license, disclose, transfer, sell, gift or supply the Data to any other person or unauthorised third party.</span> <span style="color: green;">If Approved Users plan to collaborate with investigators at external sites, the investigators at each external site must submit an independent application for access.</span></td>
-            <td>申請者は、データを他のいかなる人物または権限のない第三者と共有、サブライセンス、開示、移転、販売、贈与、または供給してはなりません。承認された利用者が外部機関の研究者と共同研究を計画する場合、各外部機関の研究者は、アクセスするために独立した申請書を提出しなければなりません。</td>
-            <td>【積み上げパターン】: UKBBの包括的な第三者提供の禁止規定をベースに、EGAとNIHが規定する「外部の共同研究者は別途アクセス申請が必要」という具体的な手続きを追記することで、抜け道のない厳格な条文を構築しました。</td>
-            <td>2.2</td>
-            <td>The Applicant shall not share, sub-license, disclose, transfer, sell, gift or supply the Materials to any other person or unauthorised third party.</td>
-            <td>申請者は、マテリアルを他のいかなる人物または権限のない第三者と共有、サブライセンス、開示、移転、販売、贈与、または供給してはなりません。</td>
-            <td>5</td>
-            <td>The User Institution agrees only to transfer or disclose these Data, in whole or part, or any material derived from these Data, to the Authorised Personnel. Should the User Institution wish to share these Data with an External Collaborator, the External Collaborator must complete a separate application for access to these Data.</td>
-            <td>利用者機関は、これらのデータ、その全体または一部、あるいはこれらのデータから派生したあらゆる資料を、承認された担当者にのみ移転または開示することに同意します。利用者機関がこれらのデータを外部の共同研究者と共有したい場合は、その外部の共同研究者がこれらのデータへのアクセスのための別途の申請を完了しなければなりません。</td>
-            <td>6.1, 1.4</td>
-            <td>6.1. The Requester and Approved Users agree to retain control of <b>NIH</b> controlled-access datasets... and further agree not to distribute them to any entity or individual not identified in the submitted DAR.<br>1.4. If the Approved Users plan to collaborate with investigators outside the Requester, the investigators at each external site must submit an independent DAR using the same project title...</td>
-            <td>6.1. 申請者および承認された利用者は、<b>NIH</b>のアクセス制限付きデータセットの管理を維持し、提出されたDARで特定されていないいかなる団体または個人にも配布しないことにさらに同意します。<br>1.4. 承認された利用者が申請者外の研究者と共同研究を計画する場合、各外部サイトの研究者は、同じプロジェクトタイトルを使用して独立したDARを提出しなければなりません。</td>
-            <td>3つのMTAすべてが、承認されていない第三者へのデータの共有や移転を厳しく禁止している点で一致しています。</td>
-            <td>EGAとNIHは、外部の共同研究者（External Collaborator）とデータを共有する場合の手続き（＝別途、独立したアクセス申請が必要）を具体的に規定していますが、UKBBはより一般的に「いかなる第三者」も禁止としており、手続きの詳細は含んでいません。</td>
-        </tr>
-        <tr>
-            <td>3.1</td>
-            <td style="color: red;">The <span style="color: black;">data generated by the Applicant in the performance of the Approved Research Project may be categorized as: (a) Results Data, which underlie the Findings; (b) Findings, which are the scientific findings of the project; and/or (c) Other Data.</span></td>
-            <td>申請者が承認された研究プロジェクトの遂行において生成したデータは、(a) 知見の基礎となる結果データ、(b) プロジェクトの科学的知見である発見、および/または (c) その他のデータ、として分類される場合があります。</td>
-            <td>【UKBB条文の一般化】: UKBBの条文は非常に具体的であるため、他MTAには直接対応する規定がありません。そのため、UKBBの分類をより一般的な表現に修正し、他のデータ共有の枠組みでも参照可能な概念として統合条文を作成しました。</td>
-            <td>3.1</td>
-            <td>The data generated by the Applicant in the performance of the Approved Research Project shall be deemed to fall into the following categories: 3.1.1 Results Data: data and methodology (for example, the SAS/R/Stata scripts) which underlie the Findings, and which would enable another competent researcher to generate the Findings; 3.1.2 Findings: the findings generated by the Applicant as a result of the Approved Research Project; and/or 3.1.3 Other Data: all other data generated by the Applicant which is not in one of the above two categories.</td>
-            <td>申請者が承認された研究プロジェクトの遂行において生成したデータは、以下のカテゴリーに分類されるものと見なされます。3.1.1 結果データ：知見の基礎となるデータおよび方法論（例えば、SAS/R/Stataスクリプト）であり、他の有能な研究者がその知見を再現することを可能にするもの。3.1.2 知見：承認された研究プロジェクトの結果として申請者が生成した知見。および/または 3.1.3 その他データ：上記の2つのカテゴリーのいずれにも属さない、申請者が生成したその他すべてのデータ。</td>
-            <td>N/A</td>
-            <td>N/A</td>
-            <td>N/A</td>
-            <td>N/A</td>
-            <td>(cf. 6.1 Data Derivatives)</td>
-            <td>(参考 6.1 データ派生物)</td>
-            <td>他MTAに直接対応する条文なし。</td>
-            <td>UKBBは、申請者が生成したデータを「結果データ」「知見」「その他データ」と詳細に分類していますが、EGAおよびNIHにはこのような明確な分類規定はありません。NIHは「データ派生物（Data Derivatives）」という用語を使用していますが、その内訳の定義はありません。これは、UKBBが成果物のデータバンクへの返還を重視していることに関連する特有の規定です。</td>
-        </tr>
-        <tr>
-            <td>3.2</td>
-            <td style="color: red;">{案1: <span style="color: black;">The Applicant shall own the IP in their Findings and Results Data. The Applicant hereby grants a perpetual, irrevocable, worldwide, royalty-free, non-exclusive licence to the Data Provider to use, reproduce, and disseminate the Findings and Results Data.</span>}<br>{案2: <span style="color: green;">The Data are considered pre-competitive. Approved Users are urged to avoid making IP claims derived directly from the Data. It is expected that the Data, and conclusions derived therefrom, will remain freely available, without requirement for licensing.</span> <span style="color: blue;">However, if the Applicant elects to obtain IP rights on downstream discoveries, it agrees to implement licensing policies that will not obstruct further research.</span>}</td>
-            <td>{案1: 申請者は、その知見および結果データに関するIPを所有するものとします。申請者はここに、データ提供者に対し、当該知見および結果データを使用、複製、および普及させるための、永続的、取消不能、全世界的、ロイヤリティフリー、非独占的なライセンスを付与します。}<br>{案2: データは競争前のものと見なされます。承認された利用者は、データから直接派生したIPの主張を避けることが強く求められます。データおよびそこから導き出された結論は、ライセンスを必要とせずに自由に利用可能なままであることが期待されます。しかし、申請者が下流の発見に関してIP権を取得することを選択した場合、さらなる研究を妨げないライセンスポリシーを実施することに同意します。}</td>
-            <td>【選択肢パターン】: UKBBは「申請者によるIP所有とデータ提供者へのライセンスバック」を規定する一方、EGAとNIHは「元データや直接の結論へのIP主張の禁止・抑制」を基本方針としており、知的財産の扱いに関する考え方が根本的に異なります。そのため、両者のアプローチを別々の案として併記しました。</td>
-            <td>3.2</td>
-            <td>Except as provided in clause 3.3, the Applicant shall own the IPRs in their Findings, the Results Data and the Other Data. The Applicant hereby grants a perpetual, irrevocable, worldwide, fully paid up, royalty free, fully sub-licensable non-exclusive licence to UK Biobank to use, reproduce, distribute, publish, store and otherwise disseminate the Findings, the Results Data and the Other Data.</td>
-            <td>3.3項に定める場合を除き、申請者はその知見、結果データ、およびその他データに関するIPRsを所有するものとします。申請者はここに、UK Biobankに対し、当該知見、結果データ、およびその他データを使用、複製、配布、公表、保存、その他普及させるための、永続的、取消不能、全世界的、全額支払済み、ロイヤリティフリー、完全サブライセンス可能な非独占的ライセンスを付与します。</td>
-            <td>9, 10</td>
-            <td>9. The User Institution agrees not to make intellectual property claims on these Data and not to use intellectual property protection in ways that would prevent or block access to, or use of, any element of these Data, or conclusion drawn directly from these Data.<br>10. The User Institution can elect to perform further research that would add intellectual and resource capital to these data and decide to obtain intellectual property rights on these downstream discoveries. In this case, the User Institution agrees to implement licensing policies that will not obstruct further research...</td>
-            <td>9. 利用者機関は、これらのデータに対して知的財産権の主張を行わず、また、これらのデータのいかなる要素やデータから直接導かれる結論へのアクセスや利用を妨げたりブロックしたりする方法で知的財産保護を利用しないことに同意します。<br>10. 利用者機関は、これらのデータに知的・資源的資本を追加するさらなる研究を行い、これらの下流の発見について知的財産権を取得することを決定できます。この場合、利用者機関は、さらなる研究を妨げないライセンスポリシーを実施することに同意します...</td>
-            <td>9.2, 9.3, 9.4</td>
-            <td>9.2. The <b>NIH</b> considers these data as pre-competitive and urges Approved Users to avoid making IP claims derived directly from the genomic dataset(s).<br>9.3. It is expected that these <b>NIH</b>-provided data, and conclusions derived therefrom, will remain freely available, without requirement for licensing.<br>9.4. However, the <b>NIH</b> also recognizes the importance of the subsequent development of IP on downstream discoveries...</td>
-            <td>9.2. <b>NIH</b>はこれらのデータを競争前のものとみなし、承認された利用者がゲノムデータセットから直接派生したIPクレームを行うことを避けるよう強く求めます。<br>9.3. これらの<b>NIH</b>提供データおよびそこから派生した結論は、ライセンス要件なしで自由に利用可能なままであることが期待されます。<br>9.4. しかし、<b>NIH</b>は下流の発見に関するIPの後続開発の重要性も認識しています...</td>
-            <td>3つのMTAすべてが、元データそのものに対するIP主張を認めていない点、また、データを利用した「下流の発見」や「発明」に関するIP取得の可能性を（一定の条件下で）認めている点で、大枠の方向性は共通しています。</td>
-            <td>・**成果のIP所有権**: UKBBは申請者が成果（Findings）のIPを「所有する」と明記する一方、EGAとNIHは元データや直接の結論へのIP主張を強く「抑制」する姿勢を示しており、IP所有に関するスタンスが異なります。<br>・**ライセンスバック**: UKBBは、申請者が所有するIPについて、データ提供者への広範なライセンスバックを義務付けていますが、EGAとNIHにはこの規定がありません。</td>
-        </tr>
-        <tr>
-            <td>3.3</td>
-            <td style="color: red;">Nothing in this Agreement shall operate to assign to the Applicant any IP in the original Data provided by the Data Provider.</td>
-            <td>本契約のいかなる条項も、データ提供者によって提供された元のデータに関するいかなるIPも申請者に譲渡するものとして機能しないものとします。</td>
-            <td>【最大公約数パターン】: 3者すべてが、元データのIPは申請者に移転しない、または申請者は主張できないという点で完全に一致しているため、その共通原則を簡潔な条文としてまとめました。</td>
-            <td>3.3</td>
-            <td>Nothing in this MTA shall operate to assign to the Applicant any IPRs in the Materials.</td>
-            <td>本MTAのいかなる規定も、申請者にマテリアルに関するいかなるIPRsも譲渡するものとして機能しません。</td>
-            <td>9</td>
-            <td>The User Institution agrees not to make intellectual property claims on these Data...</td>
-            <td>利用者機関は、これらのデータに対して知的財産権の主張を行わないことに同意します...</td>
-            <td>9.2, 9.3</td>
-            <td>9.2. ...urges Approved Users to avoid making IP claims derived directly from the genomic dataset(s).<br>9.3. It is expected that these <b>NIH</b>-provided data...will remain freely available...</td>
-            <td>9.2. ...承認された利用者がゲノムデータセットから直接派生したIPクレームを行うことを避けるよう強く求めます。<br>9.3. これらの<b>NIH</b>提供データは...自由に利用可能なままであることが期待されます...</td>
-            <td>すべてのMTAが、元のデータ（Materials/Data/dataset）に関する知的財産権はデータ提供者に帰属し、申請者には移転しない、あるいは申請者は主張できないという点で完全に一致しています。</td>
-            <td>表現に若干の違いはありますが（UKBBは「譲渡しない」、EGA/NIHは「主張しない/避ける」）、法的な効果は実質的に同じであり、大きな不一致点はありません。</td>
-        </tr>
-        <tr>
-            <td>3.4</td>
-            <td style="color: red;">If the Applicant grants a license to the Data Provider for its Findings and Results Data, the Applicant confirms that, to the best of its knowledge and belief and having made reasonable enquiry, the Data Provider's receipt and use of such data shall not infringe the IP of any third party.</td>
-            <td>申請者がその知見および結果データに関してデータ提供者にライセンスを付与する場合、申請者は、その知る限り、信じる限りにおいて、かつ合理的な調査を行った上で、データ提供者が当該データを受領し使用することがいかなる第三者のIPも侵害しないことを確認します。</td>
-            <td>【UKBB条文の一般化】: この条文はUKBBのライセンスバック要求（3.2）に付随するもので、他MTAには対応規定がありません。統合条文の案1（ライセンスバックあり）を選択した場合にのみ適用される補足的な条項として、一般化して作成しました。</td>
-            <td>3.4</td>
-            <td>The Applicant confirms to UK Biobank that UK Biobank's receipt of and use of the Applicant's Findings and Results Data shall not infringe the rights, including any existing IPRS, of any third party. Such confirmation shall be: 3.4.1 deemed to be taken at the time, respectively, of the publication of the Findings or the return of the Results Data to UK Biobank; and 3.4.2 given to the best of the Applicant's knowledge and belief, having made reasonable and diligent enquiry (but the extent of this obligation does not include any requirement on the Applicant to conduct external patent searches).</td>
-            <td>申請者は、UK Biobankが申請者の知見および結果データを受領し使用することが、既存のIPRSを含む第三者の権利を侵害しないことをUK Biobankに確認します。かかる確認は、3.4.1 それぞれ知見の公表または結果データのUK Biobankへの返還の時点で行われたものとみなされ、3.4.2 申請者の知る限り、信じる限りにおいて、合理的かつ熱心な調査を行った上で（ただし、この義務の範囲には、申請者が外部の特許調査を行う要件は含まれない）行われるものとします。</td>
-            <td>N/A</td>
-            <td>N/A</td>
-            <td>N/A</td>
-            <td>N/A</td>
-            <td>N/A</td>
-            <td>N/A</td>
-            <td>他MTAに直接対応する条文なし。</td>
-            <td>この規定は、UKBBが申請者から研究成果（Findings, Results Data）のライセンスバックを受けることを前提としており、その成果が第三者の権利を侵害していないことを申請者に保証させるものです。EGAとNIHにはライセンスバックの規定がないため、このような保証を求める条項も存在しません。</td>
-        </tr>
-        <tr>
-            <td>3.5</td>
-            <td style="color: red;">Subject to the other terms of this Agreement regarding IP, the Data Provider shall have no rights or licence to the IP in relation to any downstream inventions made by the Applicant as a result of using the Data.</td>
-            <td>IPに関する本契約の他の条項に従うことを条件として、データ提供者は、申請者がデータを使用した結果としてなされたいかなる下流の発明に関しても、そのIPに対する権利またはライセンスを有しないものとします。</td>
-            <td>【積み上げパターン】: UKBBの「発明のIPは申請者に帰属する」という規定を基本とし、EGAとNIHの「下流の発見」という概念を取り入れ、ただし書き（「本契約の他の条項に従う」）を加えることで、IP条項全体との整合性を図りました。</td>
-            <td>3.5</td>
-            <td>Subject always to the restriction in clause 3.7, UK Biobank confirms that it shall have no rights or licence to the IPRs in relation to any inventions made by the Applicant as a result of using the Materials, Results Data, Findings or Other Data ("Applicant-Generated Inventions").</td>
-            <td>常に3.7項の制限に従うことを条件として、UK Biobankは、申請者がマテリアル、結果データ、知見またはその他データを使用して行ったいかなる発明（「申請者生成発明」）に関しても、そのIPRsに対する権利またはライセンスを有しないことを確認します。</td>
-            <td>10</td>
-            <td>The User Institution can elect to...obtain intellectual property rights on these downstream discoveries.</td>
-            <td>利用者機関は...これらの下流の発見について知的財産権を取得することを選択できます。</td>
-            <td>9.4</td>
-            <td>...the <b>NIH</b> also recognizes the importance of the subsequent development of IP on downstream discoveries...</td>
-            <td>...<b>NIH</b>はまた、下流の発見に関するIPのその後の開発の重要性を認識しています...</td>
-            <td>すべてのMTAが、データを利用して生まれた「発明」や「下流の発見」に関するIPは、データ提供者ではなく、それを行った申請者に帰属する（または取得する権利がある）という点で一致しています。</td>
-            <td>UKBBは、この条項が「3.7項の制限（遺伝子型-表現型データへの特許出願禁止）」に従うことを明確に示しており、発明の権利とデータそのものへの権利主張を厳密に区別しています。EGAとNIHはより一般的な表現で下流の発見に関するIPを認めています。</td>
-        </tr>
-        <tr>
-            <td>3.6</td>
-            <td style="color: red;">The Applicant acknowledges that the Data resource has been produced using a combination of public and charitable funding, the goodwill and contribution of participants, and public resources, with the express purpose of promoting health-related research that is in the public interest.</td>
-            <td>申請者は、データ資源が、公共の利益となる健康関連の研究を促進するという明確な目的のために、公的および慈善的資金、参加者の善意と貢献、ならびに公共資源の組み合わせを用いて作成されたものであることを認識します。</td>
-            <td>【最大公約数パターン】: UKBBの条文の趣旨は、データの公共性を強調するものであり、EGAやNIHのデータ共有ポリシー（例：Fort Lauderdaleガイドライン、GDSポリシー）の精神と完全に一致します。そのため、UKBBの具体的な文言を一般化し、共通の理念としてまとめました。</td>
-            <td>3.6</td>
-            <td>However, the Applicant acknowledges that the UK Biobank resource has been produced using a combination of the goodwill and contribution of 500,000 UK participants, charitable and public funding, the use of public resources (such as UK health-record data) and established with the express purpose of promoting the conduct of health-related research which is in the public interest.</td>
-            <td>しかし、申請者は、UK Biobankのリソースが、50万人の英国参加者の善意と貢献、慈善的および公的資金、公的リソース（英国の健康記録データなど）の使用の組み合わせによって作成され、公共の利益となる健康関連研究の実施を促進するという明確な目的で設立されたことを認識します。</td>
-            <td>(cf. 7, Preamble)</td>
-            <td>(参考 7, 序文)</td>
-            <td>(参考 7, 序文)</td>
-            <td>(cf. GDS Policy Preamble)</td>
-            <td>(参考 GDSポリシー序文)</td>
-            <td>(参考 GDSポリシー序文)</td>
-            <td>明示的な条文として存在するのはUKBBのみですが、データの公共性や参加者への貢献といった理念は、EGAの各種ガイドライン遵守義務や、NIHのGDSポリシー全体の根底にある精神と一致しています。</td>
-            <td>UKBBは、後続のIP制限条項（3.7）の正当化の根拠として、この理念を契約条文内に明確に記述している点が特徴的です。EGAとNIHは、この理念を契約外のポリシーやガイドラインで示しています。</td>
-        </tr>
-        <tr>
-            <td>3.7</td>
-            <td style="color: red;">Taking into account the acknowledgements in the preceding clause, the Applicant agrees that it shall not <span style="color: black;">file any patents with claims directed to, or otherwise seek to claim or enforce any IP in, the genotype-phenotype data</span> <span style="color: red;">or any other fundamental data correlations contained within the Data or generated by the Applicant in the course of the Approved Research Project.</span></td>
-            <td>前項の認識を考慮し、申請者は、データに含まれる、または承認された研究プロジェクトの過程で申請者が生成した、遺伝子型-表現型データまたはその他の基本的なデータ相関に対して、特許請求の範囲を定めた特許を出願したり、その他の方法でIPを主張または行使しようとしたりしないことに同意します。</td>
-            <td>【最厳格ルール採用パターン】: 元データやそこから直接導かれる発見へのIP主張を制限する点で3者は共通していますが、UKBBの「遺伝子型-表現型データへの特許出願禁止」という規定が最も具体的かつ厳格です。これをベースとし、EGA/NIHの「直接の結論」という概念も包含する形で統合しました。</td>
-            <td>3.7</td>
-            <td>Taking into account the acknowledgements in clause 3.6, the Applicant agrees that it shall not and shall not attempt to: 3.7.1 file any patents with claims directed to; or 3.7.2 otherwise seek to claim or enforce any IPRs in; the genotype-phenotype data within the Materials or in the genotype-phenotype data which has been generated by the Applicant in the course of the Approved Research Project.</td>
-            <td>3.6項の認識を考慮し、申請者は、マテリアル内の遺伝子型-表現型データ、または承認された研究プロジェクトの過程で申請者が生成した遺伝子型-表現型データに対して、3.7.1 特許請求の範囲を記載した特許を出願すること、または 3.7.2 その他の方法でIPRsを主張または行使しようとしないことに同意します。</td>
-            <td>9</td>
-            <td>...not to use intellectual property protection in ways that would prevent or block access to, or use of, any element of these Data, or conclusion drawn directly from these Data.</td>
-            <td>...これらのデータのいかなる要素や、これらのデータから直接導かれる結論へのアクセスや利用を妨げたりブロックしたりする方法で知的財産保護を利用しないこと。</td>
-            <td>9.2</td>
-            <td>...urges Approved Users to avoid making IP claims derived directly from the genomic dataset(s).</td>
-            <td>...承認された利用者がゲノムデータセットから直接派生したIPクレームを行うことを避けるよう強く求めます。</td>
-            <td>3つのMTAすべてが、元データや、そこから直接的に導き出される基本的な発見（相関関係など）に対して、特許などの知的財産権を主張することを禁止または強く抑制する点で一致しています。</td>
-            <td>・**具体性**: UKBBは「遺伝子型-表現型データ」と、禁止対象を非常に具体的に指定しています。<br>・**表現の強さ**: UKBBは「禁止する（shall not）」、EGAは「利用しない（not to use）」と強い表現ですが、NIHは「避けるよう強く求める（urges to avoid）」と、やや弱い表現になっています。</td>
-        </tr>
-        <tr>
-            <td>3.8</td>
-            <td style="color: red;">The Applicant has no right to sub-licence any of the rights granted to the Data, <span style="color: black;">except for the sole purpose of including a commensurate amount of supporting data in the Applicant's publication of its Findings.</span></td>
-            <td>申請者は、その知見の公表において、相応量の裏付けデータを含めるという唯一の目的を除き、データに付与されたいかなる権利もサブライセンスする権利を有しません。</td>
-            <td>【積み上げパターン】: 第三者提供の禁止という基本原則は2.2でカバー済みですが、この条文は「サブライセンスの禁止」という法的側面と「論文発表時の例外」を明記している点で重要です。UKBBの規定をベースに、この例外規定を明確にする形で統合しました。</td>
-            <td>3.8</td>
-            <td>UK Biobank expressly excludes any right of the Applicant to sub-licence any of the rights granted to the Materials under this MTA or to publish or distribute any of the Materials, except for the sole purpose of including a commensurate amount of supporting data in the Applicant's publication of its Findings.</td>
-            <td>UK Biobankは、申請者がその知見の公表に相応量の裏付けデータを含めるという唯一の目的を除き、本MTAに基づきマテリアルに付与されたいかなる権利もサブライセンスしたり、マテリアルのいずれかを公表または配布したりする申請者の権利を明示的に排除します。</td>
-            <td>5 (Implied)</td>
-            <td>(Implied by clause 5: The User Institution agrees only to transfer or disclose...to the Authorised Personnel.)</td>
-            <td>（第5条によって暗示される：利用者機関は...承認された担当者にのみ移転または開示することに同意する。）</td>
-            <td>6.1 (Implied)</td>
-            <td>(Implied by clause 6.1: ...agree not to distribute them to any entity or individual not identified in the submitted DAR.)</td>
-            <td>（第6.1条によって暗示される：...提出されたDARで特定されていないいかなる団体または個人にも配布しないことに同意する。）</td>
-            <td>データの利用権を第三者に譲渡・共有・サブライセンスしてはならないという原則は、すべてのMTAで共通しています。</td>
-            <td>UKBBは、「サブライセンスの禁止」という法的に具体的な表現を用いている点、および「論文発表時に必要な範囲でのデータ掲載」を明確な例外として規定している点で、他MTAよりも詳細です。EGAとNIHは、より広範な「第三者への配布禁止」として規定しています。</td>
-        </tr>
-        <tr>
-            <td>3.9</td>
-            <td style="color: red;">For the avoidance of doubt, the rights granted to the Applicant to use the Data are for the Approved Research Project only.</td>
-            <td>疑義を避けるため、申請者に付与されるデータの使用権は、承認された研究プロジェクトにのみ限定されます。</td>
-            <td>【最大公約数パターン】: これは2.1で規定された利用目的制限の原則を再確認する「念押し」の条項です。3つのMTAすべてがこの原則に基づいているため、共通理解として簡潔な条文にまとめました。</td>
-            <td>3.9</td>
-            <td>For the avoidance of doubt, the rights granted under this MTA to the Applicant to use the Materials are for the Permitted Purpose only.</td>
-            <td>疑義を避けるため、本MTAに基づき申請者に付与されるマテリアルの使用権は、許可された目的にのみ限定されます。</td>
-            <td>1</td>
-            <td>The User Institution agrees to only use these Data for the purpose of the Project...</td>
-            <td>利用者機関は、これらのデータをプロジェクトの目的のためにのみ使用することに同意します...</td>
-            <td>1.2</td>
-            <td>Research use will occur solely in connection with the approved research project...</td>
-            <td>研究利用は、承認された研究プロジェクトにのみ関連して行われます...</td>
-            <td>すべてのMTAが、データの利用は承認された目的に厳しく限定されるという原則を共有しており、この条文はその原則を再確認するものである点で一致しています。</td>
-            <td>これは法的な実質内容を追加するものではなく、解釈の曖昧さをなくすための確認条項であり、MTA間での大きな不一致はありません。UKBBが「For the avoidance of doubt」という明確な表現を使っている点が特徴です。</td>
-        </tr>
-        <tr>
-            <td colspan="15" style="background-color: #f2f2f2; text-align: center;"><b>UKBBとの対応がなかった残存条文 (EGA, NIH)</b></td>
-        </tr>
-        <tr>
-            <td>(EGA-1)</td>
-            <td style="color: blue;">The Applicant agrees to preserve, at all times, the confidentiality of the Data and to protect the confidentiality of Research Participants in any publications by taking all reasonable care to limit the possibility of identification.</td>
-            <td>申請者は、常にデータの機密性を保持し、また、いかなる出版物においても、身元特定の可能性を制限するためにすべての合理的な注意を払うことにより、研究参加者の機密性を保護することに同意します。</td>
-            <td>【EGA条文の一般化】: EGAの機密保持義務と出版時の参加者保護義務は、データ利用の基本原則として重要です。UKBBの4.xや8.xに関連しますが、今回の範囲外のため、独立した条文として残しました。</td>
-            <td>N/A</td>
-            <td>N/A</td>
-            <td>N/A</td>
-            <td>2, 3</td>
-            <td>2. The User Institution agrees to preserve, at all times, the confidentiality of these Data. In particular, it undertakes not to use, or attempt to use these Data to compromise or otherwise infringe the confidentiality of information on Research Participants...<br>3. The User Institution agrees to protect the confidentiality of Research Participants in any research papers or publications that they prepare by taking all reasonable care to limit the possibility of identification.</td>
-            <td>2. 利用者機関は、常にこれらのデータの機密性を保持することに同意します。特に、研究参加者に関する情報の機密性を損なう、またはその他の方法で侵害するためにこれらのデータを使用したり、使用しようとしたりしないことを約束します...<br>3. 利用者機関は、作成する研究論文や出版物において、身元特定の可能性を制限するためにあらゆる合理的な注意を払うことにより、研究参加者の機密性を保護することに同意します。</td>
-            <td>N/A</td>
-            <td>N/A</td>
-            <td>N/A</td>
-            <td>データの機密保持と参加者のプライバシー保護は、すべてのMTAの根底にある重要な原則です。</td>
-            <td>EGAは、一般的な機密保持義務（2）と、特に出版物における参加者の機密保護（3）を別々の条項で明確に規定している点が特徴的です。</td>
-        </tr>
-        <tr>
-            <td>(NIH-1)</td>
-            <td style="color: green;">The PI agrees that information about themselves and the approved research use (including the Research Use Statement) will be posted publicly on the Data Provider's website.</td>
-            <td>PIは、自身に関する情報および承認された研究利用（研究利用声明を含む）が、データ提供者のウェブサイトで公開されることに同意します。</td>
-            <td>【NIH条文の一般化】: NIHの研究透明性確保のための規定です。UKBBの5.1に類似しますが、今回の範囲外のため独立させました。データ共有の透明性を高める上で重要な条項です。</td>
-            <td>N/A</td>
-            <td>N/A</td>
-            <td>N/A</td>
-            <td>N/A</td>
-            <td>N/A</td>
-            <td>N/A</td>
-            <td>3.1, 3.2</td>
-            <td>3.1. The PI agrees that information about themselves and the approved research use will be posted publicly on the dbGaP website.<br>3.2. The information includes the PI’s name and Requester, project name, Research Use Statement, and a Non-Technical Summary of the Research Use Statement...</td>
-            <td>3.1. PIは、自身に関する情報および承認された研究利用が、dbGaPのウェブサイトで公開されることに同意します。<br>3.2. この情報には、PIの名前と申請者、プロジェクト名、研究利用声明、および研究利用声明の非技術的要約が含まれます...</td>
-            <td>他MTAに直接対応する条文なし（ただしUKBB 5.1に類似）。</td>
-            <td>NIHは、誰がどのような目的でデータを利用しているかをdbGaPウェブサイト上で公開することを、契約の条件として明確に定めている点が非常に特徴的です。これは研究の透明性を高めるための重要な規定です。</td>
-        </tr>
-    </tbody>
+<thead>
+<tr>
+<th>外国統合No.</th>
+<th>外国統合英</th>
+<th>外国統合日</th>
+<th>統合手順</th>
+<th>UKBB No.</th>
+<th>UKBB英</th>
+<th>UKBB日</th>
+<th>EGA No.</th>
+<th>EGA英</th>
+<th>EGA日</th>
+<th>NIH No.</th>
+<th>NIH英</th>
+<th>NIH日</th>
+<th>一致点</th>
+<th>不一致点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>I-01.1</td>
+<td class="en"><span style='color: red;'>The </span><span style='color: black;'>Data Provider</span><span style='color: red;'> agrees to supply the </span><span style='color: black;'>Data</span><span style='color: red;'> to the </span><span style='color: black;'>Applicant</span><span style='color: red;'> subject to the provisions of this Agreement.</span></td>
+<td><span style='color: red;'></span><span style='color: black;'>データ提供者</span><span style='color: red;'>は、本契約の規定に従い、</span><span style='color: black;'>データ</span><span style='color: red;'>を</span><span style='color: black;'>申請者</span><span style='color: red;'>に提供することに同意する。</span></td>
+<td>【最大公約数パターン】: 3つのMTAはすべて、データ提供者が申請者にデータへのアクセスを許可するという基本的な合意を前提としています。UKBBの条文をベースに、他のMTAでも黙示的に合意されているこの中核的な原則を、統一用語を用いて汎用的な条文として抽出しました。</td>
+<td>1.1</td>
+<td class="en" style="color: black;">1.1 UK Biobank agrees to supply the Materials to the Applicant in the timeframe and manner set out in this MTA, subject to the provisions of this MTA.</td>
+<td style="color: black;">1.1 UK Biobankは、本MTAの規定に従い、本MTAに定められた期間と方法で、申請者にマテリアルを供給することに同意する。</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>一致点：データ提供の合意が契約の基本となっている点。</td>
+<td>不一致点：UKBBは「期間と方法」を明確に言及しているが、EGAとNIHは契約全体を通じてアクセスを許諾する形をとっており、特定の「供給」条文は設けていない。</td>
+</tr>
+<tr>
+<td>I-01.2</td>
+<td class="en"><span style='color: red;'>The </span><span style='color: black;'>Data Provider</span><span style='color: red;'> warrants that it is entitled to supply the </span><span style='color: black;'>Data</span><span style='color: red;'> to the </span><span style='color: black;'>Applicant</span><span style='color: red;'> and that necessary consents from Participants and ethical approvals have been obtained for the use of the </span><span style='color: black;'>Data</span><span style='color: red;'> for the </span><span style='color: black;'>Approved Research Project</span><span style='color: red;'>.</span></td>
+<td><span style='color: red;'></span><span style='color: black;'>データ提供者</span><span style='color: red;'>は、</span><span style='color: black;'>申請者</span><span style='color: red;'>に</span><span style='color: black;'>データ</span><span style='color: red;'>を提供する権限を有していること、および</span><span style='color: black;'>承認された研究プロジェクト</span><span style='color: red;'>のために</span><span style='color: black;'>データ</span><span style='color: red;'>を使用することについて、参加者からの必要な同意と倫理的承認が得られていることを保証する。</span></td>
+<td>【積み上げパターン】: UKBBが定める提供者の積極的な保証（提供権限、同意、倫理承認）を基本骨子としました。EGAとNIHにはこのような明示的な保証条項がないため、UKBBの規定を一般化し、データガバナンスの基本要件として統合条文を作成しました。</td>
+<td>1.2</td>
+<td class="en" style="color: black;">1.2 UK Biobank warrants to the Applicant that for the purposes of this MTA:<br>1.2.1 it is entitled to supply the Materials to the Applicant;<br>1.2.2 consent to take part in UK Biobank has been obtained from the Participants and further, consent under the <b>Human Tissue Act 2004</b>, has been obtained from the relevant Participants; and<br>1.2.3 the use of the Materials for the Approved Research Project falls within UK Biobank's generic Research Tissue Bank (RTB) approval from the NHS North West REC, available here.</td>
+<td style="color: black;">1.2 UK Biobankは、本MTAの目的のために、申請者に対して以下を保証する。<br>1.2.1 UK Biobankが申請者にマテリアルを提供する権限を有していること。<br>1.2.2 UK Biobankへの参加同意が参加者から得られており、さらに、<b>2004年ヒト組織法</b>に基づく同意が関連する参加者から得られていること。<br>1.2.3 承認された研究プロジェクトのためのマテリアルの使用は、UK BiobankがNHS North West RECから得ている包括的な研究組織バンク（RTB）承認の範囲内であること。</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>一致点：他MTAに直接対応する条文なし。</td>
+<td>不一致点：UKBBは提供権限、参加者の同意、倫理承認について明示的に保証している。一方、EGAとNIHは保証をせず、むしろ免責を強調する立場を取っている（後述の1.3に対応）。</td>
+</tr>
+<tr>
+<td>I-01.3</td>
+<td class="en"><span style='color: red;'>The </span><span style='color: black;'>Data</span><span style='color: red;'> are provided on an "as is" basis without any warranty of satisfactory quality, fitness for a particular purpose, or that the use of the </span><span style='color: black;'>Data</span><span style='color: red;'> shall not infringe the rights of any third party. </span><span style='color: blue;'>The </span><span style='color: black;'>Data Provider</span><span style='color: blue;'> excludes to the fullest extent permitted by law all liability for any losses that may arise from the use of these </span><span style='color: black;'>Data</span><span style='color: blue;'>.</span><span style='color: red;'> </span><span style='color: green;'>The </span><span style='color: black;'>Data Provider</span><span style='color: green;'> does not and cannot warrant the results that may be obtained by using any </span><span style='color: black;'>Data</span><span style='color: green;'>.</span></td>
+<td><span style='color: red;'></span><span style='color: black;'>データ</span><span style='color: red;'>は「現状有姿」で提供され、満足のいく品質、特定目的への適合性、または</span><span style='color: black;'>データ</span><span style='color: red;'>の使用が第三者の権利を侵害しないことについて、いかなる保証も行わない。</span><span style='color: blue;'></span><span style='color: black;'>データ提供者</span><span style='color: blue;'>は、法律で認められる最大限の範囲で、これらの</span><span style='color: black;'>データ</span><span style='color: blue;'>の使用から生じうるいかなる損失に対するすべての責任を負わない。</span><span style='color: red;'></span><span style='color: green;'></span><span style='color: black;'>データ提供者</span><span style='color: green;'>は、</span><span style='color: black;'>データ</span><span style='color: green;'>を使用して得られる可能性のある結果を保証せず、また保証することもできない。</span></td>
+<td>【最大公約数パターン】: 3つのMTAすべてに共通する「現状有姿（as is）」での提供と免責の原則を抽出しました。UKBBの基本構造を元に、EGAの「法的責任の排除」とNIHの「結果を保証しない」という表現を取り入れ、免責の範囲を明確化する形で統合しました。</td>
+<td>1.3</td>
+<td class="en" style="color: black;">1.3 The Applicant agrees that the Materials are provided on an "as is" basis without any warranty of satisfactory quality or fitness for a particular purpose or use, or that use of the Materials shall not infringe the rights of any third party. Except as expressly stated in this MTA, all warranties, terms and conditions, whether express or implied by statute, common law or otherwise, are excluded to the fullest extent permitted by law.</td>
+<td style="color: black;">1.3 申請者は、マテリアルが「現状有姿」で提供され、満足のいく品質や特定の目的・用途への適合性、またはマテリアルの使用が第三者の権利を侵害しないことについて、いかなる保証もないことに同意する。本MTAで明示的に定められている場合を除き、制定法、慣習法その他により明示または黙示されるすべての保証、条件は、法律で認められる最大限の範囲で排除される。</td>
+<td>6.a, 6.b</td>
+<td class="en" style="color: blue;">6. The User Institution agrees that the Data Producers, and all other parties involved in the creation, funding or protection of these Data:<br>a) make no warranty or representation, express or implied as to the accuracy, quality or comprehensiveness of these Data;<br>b) exclude to the fullest extent permitted by law all liability for actions, claims, proceedings, demands, losses (including but not limited to loss of profit), costs, awards damages and payments made by the Recipient that may arise (whether directly or indirectly) in any way whatsoever from the Recipients use of these Data or from the unavailability of, or break in access to, these Data for whatever reason and;</td>
+<td style="color: blue;">6. 利用機関は、データ作成者、およびこれらのデータの作成、資金提供、保護に関与するその他すべての当事者が、以下の事項に同意する。<br>a) これらのデータの正確性、品質、網羅性について、明示または黙示を問わず、いかなる保証も表明も行わない。<br>b) 受領者によるこれらのデータの使用、または理由の如何を問わずこれらのデータが利用できないこと、もしくはアクセスが中断したことから（直接的または間接的に）生じうる、受領者が行った訴訟、請求、法的手続き、要求、損失（利益の損失を含むがこれに限定されない）、費用、裁定、損害賠償、支払いに対するすべての責任を、法律で認められる最大限の範囲で排除する。</td>
+<td>12.1, 12.2</td>
+<td class="en" style="color: green;">12.1. The Requester and Approved Users acknowledge that although all reasonable efforts have been taken to ensure the accuracy and reliability of data... the <b>NIH</b> and Submitting Investigator(s) do not and cannot warrant the results that may be obtained by using any data included therein.<br>12.2. <b>NIH</b> and all contributors to these datasets disclaim all warranties as to performance or fitness of the data for any particular purpose.</td>
+<td style="color: green;">12.1. 申請者および承認された利用者は、データの正確性と信頼性を確保するためにすべての合理的な努力が払われているものの、<b>NIH</b>およびデータ提供研究者は、そこに含まれるデータを使用して得られる可能性のある結果を保証するものではなく、また保証できないことを認める。<br>12.2. <b>NIH</b>およびこれらのデータセットへのすべての貢献者は、データの性能または特定の目的への適合性に関するすべての保証を否認する。</td>
+<td>一致点：3者とも、データが「現状有姿」で提供され、品質、正確性、特定目的への適合性について保証しない点で一致している。また、データ利用から生じるいかなる損害についても、法的責任を負わないとする免責条項が含まれている。</td>
+<td>不一致点：表現の具体性に差がある。EGAは「利益の損失」など、免責対象となる損失を例示している。NIHは「結果を保証しない」点を強調している。UKBBは制定法や慣習法上の黙示の保証も排除することを明記している。</td>
+</tr>
+<tr>
+<td>I-02.1</td>
+<td class="en"><span style='color: red;'>The </span><span style='color: black;'>Data</span><span style='color: red;'> shall only be used to conduct the </span><span style='color: black;'>Approved Research Project</span><span style='color: red;'>. </span><span style='color: green;'>New uses of these </span><span style='color: black;'>Data</span><span style='color: green;'> outside those described in the application will require submission of a new application.</span><span style='color: red;'> The </span><span style='color: black;'>Data</span><span style='color: red;'> shall only be used by the </span><span style='color: black;'>Principal Investigator (PI)</span><span style='color: red;'> and the </span><span style='color: black;'>Approved Researchers</span><span style='color: red;'>.</span></td>
+<td><span style='color: red;'></span><span style='color: black;'>データ</span><span style='color: red;'>は、</span><span style='color: black;'>承認された研究プロジェクト</span><span style='color: red;'>の実施のためにのみ使用されなければならない。</span><span style='color: green;'>申請書に記載された範囲外の新たな</span><span style='color: black;'>データ</span><span style='color: green;'>の利用には、新たな申請の提出が必要となる。</span><span style='color: red;'></span><span style='color: black;'>データ</span><span style='color: red;'>は、</span><span style='color: black;'>主任研究者（PI）</span><span style='color: red;'>および</span><span style='color: black;'>承認された研究者</span><span style='color: red;'>によってのみ使用されなければならない。</span></td>
+<td>【積み上げパターン】: 3つのMTAに共通する「承認された研究目的での利用限定」を中核に据えました。UKBBの「利用者限定」の規定を加え、NIHの「新規利用には新規申請が必要」という具体的な手続きを追記することで、より包括的で実用的な条文を構築しました。</td>
+<td>2.1</td>
+<td class="en" style="color: black;">2.1 The Applicant agrees that the Materials:<br>2.1.1 shall only be used in accordance with the terms and conditions of this MTA;<br>2.1.2 shall only be used to conduct the Approved Research Project for the Permitted Purpose only;<br>2.1.3 shall not be used for any purpose connected with prohibited weapons (including biological weapons), and shall not be transferred if it is known or suspected that they are intended or likely to be used for such purposes;<br>2.1.4 shall not be transferred to a destination subject to a <b>UN, EU, UK or OSCE embargo</b> where that act would be in breach of the terms of that embargo; and<br>2.1.5 shall only be used by the Applicant institution and on an individual level within the Applicant, by the Applicant Pl, the Applicant Researchers and by Affiliates and Third-Party Processors (appointed by the Applicant).</td>
+<td style="color: black;">2.1 申請者は、マテリアルが以下の通りであることに同意する。<br>2.1.1 本MTAの諸条件に従ってのみ使用されること。<br>2.1.2 許可された目的のための承認された研究プロジェクトを実施するためにのみ使用されること。<br>2.1.3 禁止されている兵器（生物兵器を含む）に関連するいかなる目的にも使用されず、また、そのような目的に使用されることが意図されている、またはその可能性が疑われる場合には譲渡されないこと。<br>2.1.4 <b>国連、EU、英国、またはOSCE</b>の禁輸措置の対象となる仕向地に、その行為が当該禁輸措置の条件に違反することになる場合には譲渡されないこと。<br>2.1.5 申請機関、および申請機関内の個人レベルでは、申請PI、申請研究者、ならびに（申請者が指名した）関連会社および第三者処理業者によってのみ使用されること。</td>
+<td>1, 5</td>
+<td class="en" style="color: blue;">1. The User Institution agrees to only use these Data for the purpose of the Project (described in Appendix II) and only for Research Purposes. The User Institution further agrees that it will only use these Data for Research Purposes which are within the limitations (if any) set out in Appendix I.<br>5. The User Institution agrees only to transfer or disclose these Data, in whole or part, or any material derived from these Data, to the Authorised Personnel. ...</td>
+<td style="color: blue;">1. 利用機関は、これらのデータをプロジェクト（付録IIに記載）の目的のため、かつ研究目的のためにのみ使用することに同意する。利用機関はさらに、これらのデータを付録Iに定められた制限（もしあれば）の範囲内の研究目的のためにのみ使用することに同意する。<br>5. 利用機関は、これらのデータ、その全部または一部、あるいはこれらのデータから派生したあらゆるマテリアルを、承認された担当者にのみ譲渡または開示することに同意する。...</td>
+<td>1.1, 1.2, 1.5</td>
+<td class="en" style="color: green;">1.1. The Requester agrees that if access is approved, (1) the PI named in the DAR and (2) those named in the "Senior/Key Person Profile" section of the DAR...shall become Approved Users of the requested dataset(s).<br>1.2. Research use will occur solely in connection with the approved research project described in the DAR, which includes a 1-2 paragraph description of the proposed research (i.e., a Research Use Statement).<br>1.5. New uses of these data outside those described in the DAR will require submission of a new DAR.</td>
+<td style="color: green;">1.1. 申請者は、アクセスが承認された場合、(1) DARに記載されたPI、および(2) DARの「上級/主要人物プロフィール」セクションに記載された者...が、要求されたデータセットの承認された利用者となることに同意する。<br>1.2. 研究利用は、提案された研究の1〜2パラグラフの説明（すなわち、研究利用声明）を含むDARに記載された承認済みの研究プロジェクトにのみ関連して行われる。<br>1.5. DARに記載された範囲外のこれらのデータの新たな利用には、新たなDARの提出が必要となる。</td>
+<td>一致点：3者とも、データの利用が申請時に承認された研究プロジェクトの範囲に限定される点で一致している。また、データにアクセスできる担当者も、申請時に特定された承認済みの研究者に限定される点も共通している。</td>
+<td>不一致点：UKBBは禁止事項（生物兵器への利用、禁輸措置対象国への移転）を具体的に列挙しており、最も厳しい。NIHは、新たな利用には新規の申請（DAR）が必要であるという手続きを明確に規定している。EGAは、利用目的の制限について付録で詳細を定める形式をとっている。</td>
+</tr>
+<tr>
+<td>I-02.2</td>
+<td class="en"><span style='color: red;'>The </span><span style='color: black;'>Applicant</span><span style='color: red;'> shall not share, sub-license, disclose, transfer, sell, gift or supply the </span><span style='color: black;'>Data</span><span style='color: red;'> to any other person or unauthorised third party. </span><span style='color: green;'>If </span><span style='color: black;'>Approved Researchers</span><span style='color: green;'> plan to collaborate with investigators outside the </span><span style='color: black;'>Applicant</span><span style='color: green;'>, the investigators at each external site must submit an independent application.</span></td>
+<td><span style='color: red;'></span><span style='color: black;'>申請者</span><span style='color: red;'>は、</span><span style='color: black;'>データ</span><span style='color: red;'>を他のいかなる者または権限のない第三者と共有、サブライセンス、開示、譲渡、販売、贈与、または供給してはならない。</span><span style='color: green;'></span><span style='color: black;'>承認された研究者</span><span style='color: green;'>が</span><span style='color: black;'>申請者</span><span style='color: green;'>外の研究者と共同研究を行うことを計画する場合、各外部サイトの研究者は独立した申請書を提出しなければならない。</span></td>
+<td>【最厳格ルール採用パターン】: 3つのMTAに共通する「第三者へのデータ移転の原則禁止」という最も厳格なルールを基本としました。UKBBの禁止行為の列挙（共有、販売、贈与など）を採用し、EGAとNIHが定める「外部共同研究者は別途申請が必要」という具体的な手続きを追記することで、抜け道のない厳格な条文を構築しました。</td>
+<td>2.2</td>
+<td class="en" style="color: black;">2.2 The Applicant shall not share, sub-license, disclose, transfer, sell, gift or supply the Materials to any other person or unauthorised third party.</td>
+<td style="color: black;">2.2 申請者は、マテリアルを他のいかなる者または権限のない第三者と共有、サブライセンス、開示、譲渡、販売、贈与、または供給してはならない。</td>
+<td>5</td>
+<td class="en" style="color: blue;">5. ...Should the User Institution wish to share these Data with an External Collaborator, the External Collaborator must complete a separate application for access to these Data.</td>
+<td style="color: blue;">5. ...利用機関がこれらのデータを外部の共同研究者と共有したい場合は、その外部共同研究者がこれらのデータへのアクセスについて別途申請を完了しなければならない。</td>
+<td>6.1, 1.4</td>
+<td class="en" style="color: green;">6.1. The Requester and Approved Users agree to retain control of <b>NIH</b> controlled-access datasets obtained through the attached DAR, and any Data Derivatives of controlled-access datasets, and further agree not to distribute them to any entity or individual not identified in the submitted DAR.<br>1.4. If the Approved Users plan to collaborate with investigators outside the Requester, the investigators at each external site must submit an independent DAR using the same project title and Research Use Statement...</td>
+<td style="color: green;">6.1. 申請者および承認された利用者は、添付のDARを通じて取得した<b>NIH</b>のアクセス制限付きデータセット、およびアクセス制限付きデータセットのあらゆるデータ派生物の管理を維持し、提出されたDARで特定されていないいかなる団体または個人にも配布しないことにさらに同意する。<br>1.4. 承認された利用者が申請者外の研究者と共同研究を行うことを計画する場合、各外部サイトの研究者は、同じプロジェクト名と研究利用声明を使用して、独立したDARを提出しなければならない。</td>
+<td>一致点：3者とも、承認されていない第三者へのデータの移転・共有を固く禁じている。外部の研究者と共同研究を行う場合は、その研究者自身が別途アクセス申請を行い、承認を得る必要があるという点で手続きも一致している。</td>
+<td>不一致点：UKBBは禁止される行為（共有、販売、贈与など）を最も具体的に列挙している。NIHはデータ派生物（Data Derivatives）も移転禁止の対象に含めることを明記している。</td>
+</tr>
+<tr>
+<td>I-02.3</td>
+<td class="en"><span style='color: red;'>Any breach of the provisions regarding the usage and transfer of </span><span style='color: black;'>Data</span><span style='color: red;'> shall entitle the </span><span style='color: black;'>Data Provider</span><span style='color: red;'> to </span><span style='color: black;'>terminate</span><span style='color: red;'> this Agreement with immediate effect and require the immediate return or destruction of any </span><span style='color: black;'>Data</span><span style='color: red;'> provided.</span></td>
+<td><span style='color: red;'></span><span style='color: black;'>データ</span><span style='color: red;'>の使用および移転に関する規定の違反があった場合、</span><span style='color: black;'>データ提供者</span><span style='color: red;'>は本契約を即時</span><span style='color: black;'>解除</span><span style='color: red;'>し、提供されたすべての</span><span style='color: black;'>データ</span><span style='color: red;'>の即時返却または破棄を要求する権利を有するものとする。</span></td>
+<td>【最大公約数パターン】: 利用規約違反が契約解除の理由となる点は3つのMTAに共通しています。UKBBの条文を基に、違反行為と罰則（即時解除、データ破棄）の因果関係を明確にした汎用的な条文を作成しました。EGAとNIHの「書面による通知」という手続きは、より詳細な一般条項でカバーされるものとし、ここでは中核的な権利のみを記述しました。</td>
+<td>2.3</td>
+<td class="en" style="color: black;">2.3 Without prejudice to the other provisions of this MTA, any actual or anticipatory breach of any provision of clauses 2.1 or 2.2 shall entitle UK Biobank to terminate this Agreement with immediate effect and require the immediate return or destruction of any Materials provided by UK Biobank.</td>
+<td style="color: black;">2.3 本MTAの他の規定を害することなく、第2.1条または第2.2条のいずれかの規定に対する実際のまたは予期される違反があった場合、UK Biobankは本契約を即時解除し、UK Biobankが提供したマテリアルの即時返却または破棄を要求する権利を有する。</td>
+<td>14, 15</td>
+<td class="en" style="color: blue;">14. The User Institution will notify XXXXX as soon as it becomes aware of a breach of the terms or conditions of this agreement.<br>15. XXXXX may terminate this agreement by written notice to the User Institution. If this agreement terminates for any reason, the User Institution will be required to destroy any Data held, including copies and backup copies. ...</td>
+<td style="color: blue;">14. 利用機関は、本契約の条項または条件の違反に気づき次第、直ちにXXXXXに通知する。<br>15. XXXXXは、利用機関への書面による通知により、本契約を解除することができる。本契約が何らかの理由で終了した場合、利用機関は、コピーおよびバックアップコピーを含む、保持しているすべてのデータを破棄することが要求される。...</td>
+<td>8.1</td>
+<td class="en" style="color: green;">8.1. The Requester and Approved Users acknowledge that the <b>NIH</b> may terminate the DAR, including this Agreement and immediately revoke or suspend access to all controlled-access datasets... if the Requester is found to be no longer in agreement with the principles outlined.</td>
+<td style="color: green;">8.1. 申請者および承認された利用者は、申請者が概説された原則に同意しなくなったと判断された場合、<b>NIH</b>が本契約を含むDARを終了させ、すべてのアクセス制限付きデータセットへのアクセスを即時取り消しまたは停止する場合があることを認める。</td>
+<td>一致点：3者とも、契約違反があった場合にデータ提供者が契約を解除できる権利を持つ点で一致している。契約終了時には、利用者が保持するデータを破棄する義務が生じる点も共通している。</td>
+<td>不一致点：UKBBは「即時解除」と「即時返却・破棄」を規定しており、最も厳しい対応となっている。EGAは「書面による通知」を要求しており、手続きが明記されている。NIHはアクセスの「取り消しまたは停止」という選択肢も示唆している。</td>
+</tr>
+<tr>
+<td>I-02.4</td>
+<td class="en"><span style='color: red;'>The </span><span style='color: black;'>Applicant</span><span style='color: red;'> shall procure that the </span><span style='color: black;'>Principal Investigator (PI)</span><span style='color: red;'> and </span><span style='color: black;'>Approved Researchers</span><span style='color: red;'> are made aware of, and shall comply with, the terms and conditions of this Agreement. </span><span style='color: blue;'>The </span><span style='color: black;'>Applicant</span><span style='color: blue;'> will procure that the </span><span style='color: black;'>Approved Researchers</span><span style='color: blue;'> comply with the terms of this agreement.</span><span style='color: red;'> Any act or omission of the </span><span style='color: black;'>PI</span><span style='color: red;'> or any </span><span style='color: black;'>Approved Researcher</span><span style='color: red;'> shall be deemed to be an act of the </span><span style='color: black;'>Applicant</span><span style='color: red;'> for which the </span><span style='color: black;'>Applicant</span><span style='color: red;'> is fully responsible and liable.</span></td>
+<td><span style='color: red;'></span><span style='color: black;'>申請者</span><span style='color: red;'>は、</span><span style='color: black;'>主任研究者（PI）</span><span style='color: red;'>および</span><span style='color: black;'>承認された研究者</span><span style='color: red;'>が本契約の諸条件を認識し、これを遵守することを保証しなければならない。</span><span style='color: blue;'></span><span style='color: black;'>申請者</span><span style='color: blue;'>は、</span><span style='color: black;'>承認された研究者</span><span style='color: blue;'>が本契約の条項を遵守することを保証する。</span><span style='color: red;'></span><span style='color: black;'>PI</span><span style='color: red;'>または</span><span style='color: black;'>承認された研究者</span><span style='color: red;'>の作為または不作為は、</span><span style='color: black;'>申請者</span><span style='color: red;'>の行為とみなされ、</span><span style='color: black;'>申請者</span><span style='color: red;'>が全責任を負うものとする。</span></td>
+<td>【積み上げパターン】: UKBBとEGAに共通する「申請機関は、配下の研究者が契約を遵守するよう保証する」という責務を基本としました。UKBBの「研究者の行為は申請機関の行為とみなす」という、責任の所在を明確にする条文を付け加えることで、より実効性の高い条文としました。NIHにはこれに直接対応する包括的な責任条項はありませんが、契約全体からPIと申請機関の責任は読み取れます。</td>
+<td>2.4</td>
+<td class="en" style="color: black;">2.4 The Applicant shall and shall procure cure that the Applicant Pl, the Applicant Researchers and any Affiliate and any Third-Party Processors are made aware of, and shall comply with, the terms and conditions of this MTA and the Data Protection Legislation. Any act or omission of the Applicant Pl or any Applicant Researcher or any Affiliate or any Third-Party Processor shall be deemed to be an act of the relevant Applicant for which the relevant Applicant is fully responsible and liable.</td>
+<td style="color: black;">2.4 申請者は、申請PI、申請研究者、関連会社、および第三者処理業者が、本MTAの諸条件およびデータ保護法を認識し、これを遵守することを保証し、また保証させるものとする。申請PI、申請研究者、関連会社、または第三者処理業者の作為または不作為は、関連する申請者の行為とみなされ、その申請者が全責任を負うものとする。</td>
+<td>18</td>
+<td class="en" style="color: blue;">18. The User Institution agrees to distribute a copy of these terms to the Authorised Personnel. The User Institution will procure that the Authorised Personnel comply with the terms of this agreement.</td>
+<td style="color: blue;">18. 利用機関は、これらの条件の写しを承認された担当者に配布することに同意する。利用機関は、承認された担当者が本契約の条項を遵守することを保証する。</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>一致点：UKBBとEGAは、申請機関（User Institution）が、データを利用する個々の研究者（Authorised Personnel）に契約条件を周知させ、遵守させる責任を負う点で一致している。</td>
+<td>不一致点：UKBBは、研究者個人の違反行為を申請機関自身の行為とみなし、申請機関が全責任を負うことを極めて明確に規定している。EGAは遵守を「保証する」と述べているが、UKBBほど責任の帰属を強くは表現していない。NIHには、これに直接対応する包括的な条項はない。</td>
+</tr>
+<tr>
+<td>I-02.5</td>
+<td class="en"><span style='color: red;'>This Agreement confers on the </span><span style='color: black;'>Applicant</span><span style='color: red;'> only those rights that are expressly granted to the </span><span style='color: black;'>Applicant</span><span style='color: red;'>.</span></td>
+<td><span style='color: red;'>本契約は、</span><span style='color: black;'>申請者</span><span style='color: red;'>に明示的に付与された権利のみを</span><span style='color: black;'>申請者</span><span style='color: red;'>に与えるものである。</span></td>
+<td>【最大公約数パターン】: UKBBに明記されている「明示的に許諾された権利以外の権利は認めない」という原則は、ライセンス契約の基本であり、EGAやNIHのMTAでも黙示的な前提となっています。この基本原則を、UKBBの表現を借りて明確な条文としました。</td>
+<td>2.5</td>
+<td class="en" style="color: black;">2.5 This MTA confers on the Applicant only those rights that are expressly granted to the Applicant.</td>
+<td style="color: black;">2.5 本MTAは、申請者に明示的に付与された権利のみを申請者に与えるものである。</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>一致点：他MTAに直接対応する条文なし。</td>
+<td>不一致点：これは契約解釈の基本原則を述べたものであり、UKBBに特有の規定。EGAとNIHは、利用目的や利用者を限定することで間接的に権利の範囲を定めているが、このような一般原則を明記した条文はない。</td>
+</tr>
+<tr>
+<td>I-02.6</td>
+<td class="en"><span style='color: red;'>The </span><span style='color: black;'>Data Provider</span><span style='color: red;'> is the owner of the </span><span style='color: black;'>Data</span><span style='color: red;'>. The </span><span style='color: black;'>Data Provider</span><span style='color: red;'> hereby grants to the </span><span style='color: black;'>Applicant</span><span style='color: red;'> a revocable, royalty-free, non-exclusive, non-transferable licence to use the </span><span style='color: black;'>Data</span><span style='color: red;'> for the </span><span style='color: black;'>Approved Research Project</span><span style='color: red;'>, subject to the terms and conditions of this Agreement.</span></td>
+<td><span style='color: red;'></span><span style='color: black;'>データ提供者</span><span style='color: red;'>は</span><span style='color: black;'>データ</span><span style='color: red;'>の所有者である。</span><span style='color: black;'>データ提供者</span><span style='color: red;'>は、本契約の諸条件に従うことを条件として、</span><span style='color: black;'>承認された研究プロジェクト</span><span style='color: red;'>のために</span><span style='color: black;'>データ</span><span style='color: red;'>を使用するための、取り消し可能、ロイヤリティフリー、非独占的、譲渡不能なライセンスを、本契約により</span><span style='color: black;'>申請者</span><span style='color: red;'>に付与する。</span></td>
+<td>【積み上げパターン】: UKBBが規定する明確なライセンス条項（所有権の所在、ライセンスの性質）を基本骨子としました。EGAとNIHは明示的なライセンス条項を設けていませんが、その契約内容は実質的に非独占的で譲渡不能な利用許諾（ライセンス）を意味するため、UKBBの条文を一般化することで、3者のMTAが持つ実質的な法的関係を統合条文として表現しました。</td>
+<td>2.6</td>
+<td class="en" style="color: black;">2.6 In relation to the Materials supplied to the Applicant:<br>2.6.1 UK Biobank is the owner of the Materials, and UK Biobank is the owner of the Intellectual Property Rights in the Materials; and<br>2.6.2 UK Biobank hereby grants to the Applicant a revocable, worldwide, royalty-free, non-exclusive, non-transferable licence (but not any ownership rights) during the Term to use the Materials for the Permitted Purpose, subject to the terms and conditions of this MTA.</td>
+<td style="color: black;">2.6 申請者に提供されるマテリアルに関して：<br>2.6.1 UK Biobankはマテリアルの所有者であり、UK Biobankはマテリアルにおける知的財産権の所有者である。<br>2.6.2 UK Biobankは、本MTAの諸条件に従うことを条件として、許可された目的のためにマテリアルを使用するための、取り消し可能、全世界的、ロイヤリティフリー、非独占的、譲渡不能なライセンス（ただし、いかなる所有権も含まない）を、本契約期間中、申請者に付与する。</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>一致点：他MTAに直接対応する条文なし。</td>
+<td>不一致点：UKBBは、自身がデータの所有者であること、および申請者に与える権利が「取り消し可能、非独占的、譲渡不能なライセンス」であることを明確に定義している。EGAとNIHは、アクセスを許可するという形式をとっており、このような厳密な所有権やライセンスに関する条項は設けていない。</td>
+</tr>
+<tr>
+<td>I-03.1</td>
+<td class="en"><span style='color: red;'>The </span><span style='color: black;'>Data Derivatives</span><span style='color: red;'> generated by the </span><span style='color: black;'>Applicant</span><span style='color: red;'> in the performance of the </span><span style='color: black;'>Approved Research Project</span><span style='color: red;'> shall be categorized for the purpose of defining ownership and sharing obligations.</span></td>
+<td><span style='color: red;'></span><span style='color: black;'>申請者</span><span style='color: red;'>が</span><span style='color: black;'>承認された研究プロジェクト</span><span style='color: red;'>の実施において生成した</span><span style='color: black;'>データ派生物</span><span style='color: red;'>は、所有権および共有義務を定義する目的で分類されるものとする。</span></td>
+<td>【積み上げパターン】: UKBB独自の「生成データの分類」という概念を一般化しました。他のMTAでは明示的な分類はありませんが、成果（Publication）と元データに近い派生物（Data Derivatives）の扱いは区別されるため、この概念は有効です。UKBBの条文を基に、より汎用的な「分類する」という規定としました。これは後のIP条項や成果共有条項の前提となります。</td>
+<td>3.1</td>
+<td class="en" style="color: black;">3.1 The data generated by the Applicant in the performance of the Approved Research Project shall be deemed to fall into the following categories:<br>3.1.1 Results Data: data and methodology (for example, the SAS/R/Stata scripts) which underlie the Findings, and which would enable another competent researcher to generate the Findings;<br>3.1.2 Findings: the findings generated by the Applicant as a result of the Approved Research Project; and/or<br>3.1.3 Other Data: all other data generated by the Applicant which is not in one of the above two categories.</td>
+<td style="color: black;">3.1 申請者が承認された研究プロジェクトの実施において生成したデータは、以下のカテゴリーに分類されるものとみなされる。<br>3.1.1 結果データ：所見の基礎となるデータおよび方法論（例：SAS/R/Stataスクリプト）であって、他の有能な研究者がその所見を再現することを可能にするもの。<br>3.1.2 所見：承認された研究プロジェクトの結果として申請者が生成した所見。<br>3.1.3 その他のデータ：上記の2つのカテゴリーのいずれにも属さない、申請者が生成したその他すべてのデータ。</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>一致点：他MTAに直接対応する条文なし。</td>
+<td>不一致点：UKBBは、研究成果として生成されるデータを「結果データ」「所見」「その他のデータ」と明確に定義・分類している。これは、後のIP所有権やデータ返還義務を規定するための前提となっている。EGAとNIHには、このような生成データの詳細な分類規定はない。</td>
+</tr>
+<tr>
+<td>I-03.2</td>
+<td class="en"><span style='color: red;'>{</span><span style='color: red;'>案1: </span><span style='color: black;'>The </span><span style='color: black;'>Applicant</span><span style='color: black;'> shall own the </span><span style='color: black;'>IP</span><span style='color: black;'> in their </span><span style='color: black;'>Publication of Findings</span><span style='color: black;'> and </span><span style='color: black;'>Data Derivatives</span><span style='color: black;'>. The </span><span style='color: black;'>Applicant</span><span style='color: black;'> hereby grants a perpetual, irrevocable, worldwide, royalty-free, sub-licensable, non-exclusive licence to the </span><span style='color: black;'>Data Provider</span><span style='color: black;'> to use and disseminate the </span><span style='color: black;'>Publication of Findings</span><span style='color: black;'> and </span><span style='color: black;'>Data Derivatives</span><span style='color: black;'>.</span><span style='color: red;'>}</span><br><span style='color: red;'>{</span><span style='color: red;'>案2: </span><span style='color: blue;'>The </span><span style='color: blue;'>Applicant</span><span style='color: blue;'> agrees not to make </span><span style='color: blue;'>IP</span><span style='color: blue;'> claims on the </span><span style='color: blue;'>Data</span><span style='color: blue;'>. For downstream discoveries, the </span><span style='color: blue;'>Applicant</span><span style='color: blue;'> agrees to implement licensing policies that will not obstruct further research.</span><span style='color: red;'>}</span><br><span style='color: red;'>{</span><span style='color: red;'>案3: </span><span style='color: green;'>The </span><span style='color: green;'>Data</span><span style='color: green;'> are considered pre-competitive and </span><span style='color: green;'>Approved Researchers</span><span style='color: green;'> are urged to avoid making </span><span style='color: green;'>IP</span><span style='color: green;'> claims derived directly from the </span><span style='color: green;'>Data</span><span style='color: green;'>. It is expected that these </span><span style='color: green;'>Data</span><span style='color: green;'>, and conclusions derived therefrom, will remain freely available.</span><span style='color: red;'>}</span></td>
+<td><span style='color: red;'>{</span><span style='color: red;'>案1: </span><span style='color: black;'>申請者</span><span style='color: black;'>は、その</span><span style='color: black;'>研究成果発表</span><span style='color: black;'>および</span><span style='color: black;'>データ派生物</span><span style='color: black;'>における</span><span style='color: black;'>知的財産</span><span style='color: black;'>を所有するものとする。</span><span style='color: black;'>申請者</span><span style='color: black;'>は、</span><span style='color: black;'>研究成果発表</span><span style='color: black;'>および</span><span style='color: black;'>データ派生物</span><span style='color: black;'>を使用し、普及させるための、永続的、取消不能、全世界的、ロイヤリティフリー、サブライセンス可能、非独占的なライセンスを、本契約により</span><span style='color: black;'>データ提供者</span><span style='color: black;'>に付与する。</span><span style='color: red;'>}</span><br><span style='color: red;'>{</span><span style='color: red;'>案2: </span><span style='color: blue;'>申請者</span><span style='color: blue;'>は、</span><span style='color: blue;'>データ</span><span style='color: blue;'>に関して</span><span style='color: blue;'>知的財産</span><span style='color: blue;'>権の主張を行わないことに同意する。下流の発見については、</span><span style='color: blue;'>申請者</span><span style='color: blue;'>は、さらなる研究を妨げないライセンスポリシーを実施することに同意する。</span><span style='color: red;'>}</span><br><span style='color: red;'>{</span><span style='color: red;'>案3: </span><span style='color: green;'>データ</span><span style='color: green;'>は競争前のものとみなされ、</span><span style='color: green;'>承認された研究者</span><span style='color: green;'>は、</span><span style='color: green;'>データ</span><span style='color: green;'>から直接派生する</span><span style='color: green;'>知的財産</span><span style='color: green;'>権の主張を避けるよう強く求められる。これらの</span><span style='color: green;'>データ</span><span style='color: green;'>およびそこから導き出される結論は、引き続き自由に利用できることが期待される。</span><span style='color: red;'>}</span></td>
+<td>【選択肢パターン】: 知的財産権（IP）の扱いについては、3つのMTAの方針が根本的に異なります。UKBBは「申請者がIPを所有し、データ提供者にライセンスバックする」モデル、EGAは「元データへのIP主張は禁止し、下流の発見は研究を妨げない形で許容する」モデル、NIHは「IP主張を避けるよう強く奨励する（urge）」というオープンサイエンス重視のモデルです。これらは一つの条文に統合できないため、それぞれの趣旨を案として併記しました。</td>
+<td>3.2</td>
+<td class="en" style="color: black;">3.2 Except as provided in clause 3.3, the Applicant shall own the IPRs in their Findings, the Results Data and the Other Data. The Applicant hereby grants a perpetual, irrevocable, worldwide, fully paid up, royalty free, fully sub-licensable non-exclusive licence to UK Biobank to use, reproduce, distribute, publish, store and otherwise disseminate the Findings, the Results Data and the Other Data.</td>
+<td style="color: black;">3.2 第3.3条に規定される場合を除き、申請者は、その所見、結果データ、およびその他のデータにおける知的財産権を所有するものとする。申請者は、UK Biobankに対し、所見、結果データ、およびその他のデータを使用、複製、配布、公表、保管、その他普及させるための、永続的、取消不能、全世界的、全額払込済み、ロイヤリティフリー、完全サブライセンス可能、非独占的なライセンスを付与する。</td>
+<td>9, 10</td>
+<td class="en" style="color: blue;">9. The User Institution agrees not to make intellectual property claims on these Data and not to use intellectual property protection in ways that would prevent or block access to, or use of, any element of these Data, or conclusion drawn directly from these Data.<br>10. The User Institution can elect to perform further research that would add intellectual and resource capital to these data and decide to obtain intellectual property rights on these downstream discoveries. In this case, the User Institution agrees to implement licensing policies that will not obstruct further research...</td>
+<td style="color: blue;">9. 利用機関は、これらのデータについて知的財産権の主張を行わず、また、これらのデータのいかなる要素、またはこれらのデータから直接導き出された結論へのアクセスまたは使用を妨げたり、ブロックしたりする方法で知的財産保護を使用しないことに同意する。<br>10. 利用機関は、これらのデータに知的・資源的資本を追加するさらなる研究を行い、これらの下流の発見について知的財産権を取得することを決定できる。この場合、利用機関は、さらなる研究を妨げないライセンスポリシーを実施することに同意する...</td>
+<td>9.1, 9.2, 9.3, 9.4</td>
+<td class="en" style="color: green;">9.1. By requesting access to genomic dataset(s), the Requester and Approved Users acknowledge the intent of the <b>NIH</b> that anyone authorized for research access through the attached DAR follow the intellectual property (IP) principles in the <b>NIH GDS Policy</b>.<br>9.2. The <b>NIH</b> considers these data as pre-competitive and urges Approved Users to avoid making IP claims derived directly from the genomic dataset(s).<br>9.3. It is expected that these <b>NIH</b>-provided data, and conclusions derived therefrom, will remain freely available, without requirement for licensing.<br>9.4. However, the <b>NIH</b> also recognizes the importance of the subsequent development of IP on downstream discoveries, especially in therapeutics...</td>
+<td style="color: green;">9.1. ゲノムデータセットへのアクセスを要求することにより、申請者および承認された利用者は、添付のDARを通じて研究アクセスを許可された者が<b>NIH GDSポリシー</b>における知的財産（IP）原則に従うという<b>NIH</b>の意図を認める。<br>9.2. <b>NIH</b>はこれらのデータを競争前のものとみなし、承認された利用者がゲノムデータセットから直接派生するIPの主張を避けるよう強く求める。<br>9.3. これらの<b>NIH</b>提供のデータ、およびそこから導き出される結論は、ライセンスの要求なしに、引き続き自由に利用できることが期待される。<br>9.4. しかし、<b>NIH</b>はまた、特に治療法における下流の発見に関するIPのその後の開発の重要性も認識している...</td>
+<td>一致点：3者とも、元データそのものや、そこから直接導かれる結論に対して、排他的な知的財産権を主張し、他の研究者のアクセスを妨げることを制限する点で、基本的な方向性は一致している。また、下流の応用研究（downstream discoveries）から生まれる発明については、ある程度のIP保護を認める余地を残している点も共通している。</td>
+<td>不一致点：方針の強さと具体性が大きく異なる。<br>・<b>UKBB</b>: 申請者がIPを所有することを明確に認めるが、その代わりにUK Biobankへの強力なライセンスバックを義務付けている。<br>・<b>EGA</b>: 元データへのIP主張を明確に「禁止」している。下流の発見についてはIP取得を許容するが、「さらなる研究を妨げない」ライセンスポリシーを義務付けている。<br>・<b>NIH</b>: IP主張を避けるよう「強く求める（urges）」という、法的拘束力が比較的弱い表現を用いているが、「データと結論は自由に利用できるべき」というオープンサイエンスの理念を最も強く打ち出している。</td>
+</tr>
+<tr>
+<td>I-03.3</td>
+<td class="en"><span style='color: red;'>Nothing in this Agreement shall operate to assign to the </span><span style='color: black;'>Applicant</span><span style='color: red;'> any </span><span style='color: black;'>IP</span><span style='color: red;'> in the original </span><span style='color: black;'>Data</span><span style='color: red;'>.</span></td>
+<td><span style='color: red;'>本契約のいかなる規定も、元の</span><span style='color: black;'>データ</span><span style='color: red;'>における</span><span style='color: black;'>知的財産</span><span style='color: red;'>を</span><span style='color: black;'>申請者</span><span style='color: red;'>に譲渡するものとして機能しない。</span></td>
+<td>【最大公約数パターン】: UKBBの条文は、知的財産権に関する基本原則を明確にしたものです。EGAやNIHのMTAでも、元データのIPが利用者に移転しないことは自明の前提とされています。したがって、UKBBの明確な規定を一般化し、すべてのMTAに共通する基本原則として統合条文を作成しました。</td>
+<td>3.3</td>
+<td class="en" style="color: black;">3.3 Nothing in this MTA shall operate to assign to the Applicant any IPRs in the Materials.</td>
+<td style="color: black;">3.3 本MTAのいかなる規定も、マテリアルにおけるいかなる知的財産権も申請者に譲渡するものとして機能しない。</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>一致点：他MTAに直接対応する条文なし。</td>
+<td>不一致点：UKBBは、元のデータ（Materials）に関するIPが申請者に移転しないことを念のため明記している。これは他のIP条項の前提となる規定。EGA、NIHでは、これは自明のこととして、あえて条文化していない。</td>
+</tr>
+<tr>
+<td>I-03.4</td>
+<td class="en"><span style='color: red;'>The </span><span style='color: black;'>Applicant</span><span style='color: red;'> confirms that the </span><span style='color: black;'>Data Provider's</span><span style='color: red;'> receipt and use of the </span><span style='color: black;'>Applicant's</span><span style='color: black;'> </span><span style='color: black;'>Publication of Findings</span><span style='color: red;'> and </span><span style='color: black;'>Data Derivatives</span><span style='color: red;'> shall not infringe the </span><span style='color: black;'>IP</span><span style='color: red;'> of any third party.</span></td>
+<td><span style='color: red;'></span><span style='color: black;'>申請者</span><span style='color: red;'>は、</span><span style='color: black;'>データ提供者</span><span style='color: red;'>が</span><span style='color: black;'>申請者</span><span style='color: red;'>の</span><span style='color: black;'>研究成果発表</span><span style='color: red;'>および</span><span style='color: black;'>データ派生物</span><span style='color: red;'>を受領し使用することが、いかなる第三者の</span><span style='color: black;'>知的財産</span><span style='color: red;'>も侵害しないことを確認する。</span></td>
+<td>【積み上げパターン】: UKBBに特有の規定ですが、データ提供者がライセンスバックされた成果物を利用する際のリスクを回避するための合理的な条項です。他のMTAではライセンスバックの仕組みが明確でないためこの規定もありませんが、統合条文の案1（UKBBモデル）を採用する場合には不可欠な要素であるため、UKBBの条文を一般化して作成しました。</td>
+<td>3.4</td>
+<td class="en" style="color: black;">3.4 The Applicant confirms to UK Biobank that UK Biobank's receipt of and use of the Applicant's Findings and Results Data shall not infringe the rights, including any existing IPRS, of any third party. Such confirmation shall be:<br>3.4.1 deemed to be taken at the time, respectively, of the publication of the Findings or the return of the Results Data to UK Biobank; and<br>3.4.2 given to the best of the Applicant's knowledge and belief, having made reasonable and diligent enquiry (but the extent of this obligation does not include any requirement on the Applicant to conduct external patent searches).</td>
+<td style="color: black;">3.4 申請者は、UK Biobankが申請者の所見および結果データを受領し使用することが、既存のいかなる知的財産権を含む第三者の権利を侵害しないことを、UK Biobankに確認する。当該確認は、<br>3.4.1 それぞれ、所見の公表時または結果データのUK Biobankへの返却時に行われたものとみなされ、<br>3.4.2 合理的かつ熱心な調査を行った上での、申請者の最善の知識と信念に基づいて与えられる（ただし、この義務の範囲には、申請者が外部の特許調査を実施する要件は含まれない）。</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>一致点：他MTAに直接対応する条文なし。</td>
+<td>不一致点：UKBBは、申請者から提供される成果物（Findings, Results Data）が第三者のIPを侵害しないことを申請者に保証させている。これは、UKBBがそれらの成果物を二次利用（他の研究者への提供など）することを前提とした、リスク管理のための特有の規定である。</td>
+</tr>
+<tr>
+<td>I-03.5</td>
+<td class="en"><span style='color: red;'>The </span><span style='color: black;'>Data Provider</span><span style='color: red;'> confirms that it shall have no rights or licence to the </span><span style='color: black;'>IP</span><span style='color: red;'> in relation to any inventions made by the </span><span style='color: black;'>Applicant</span><span style='color: red;'> as a result of using the </span><span style='color: black;'>Data</span><span style='color: red;'> or </span><span style='color: black;'>Data Derivatives</span><span style='color: red;'>.</span></td>
+<td><span style='color: red;'></span><span style='color: black;'>データ提供者</span><span style='color: red;'>は、</span><span style='color: black;'>申請者</span><span style='color: red;'>が</span><span style='color: black;'>データ</span><span style='color: red;'>または</span><span style='color: black;'>データ派生物</span><span style='color: red;'>を使用して行ったいかなる発明に関しても、その</span><span style='color: black;'>知的財産</span><span style='color: red;'>に対する権利またはライセンスを有しないことを確認する。</span></td>
+<td>【最大公約数パターン】: UKBBの条文は、「発明」のIPは申請者に帰属することを明確にするものです。これは、EGAやNIHが「下流の発見（downstream discoveries）」に関するIPを許容する趣旨とも一致します。UKBBの規定を一般化し、3者のMTAに共通する「データ利用から生まれた発明のIPは基本的に申請者のものである」という原則を統合条文としました。</td>
+<td>3.5</td>
+<td class="en" style="color: black;">3.5 Subject always to the restriction in clause 3.7, UK Biobank confirms that it shall have no rights or licence to the IPRs in relation to any inventions made by the Applicant as a result of using the Materials, Results Data, Findings or Other Data ("Applicant-Generated Inventions").</td>
+<td style="color: black;">3.5 第3.7条の制限に常に従うことを条件として、UK Biobankは、申請者がマテリアル、結果データ、所見、またはその他のデータを使用して行ったいかなる発明（「申請者生成発明」）に関しても、その知的財産権に対する権利またはライセンスを有しないことを確認する。</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>一致点：他MTAに直接対応する条文なし。</td>
+<td>不一致点：UKBBは、データ提供者が申請者の「発明」のIPに対して権利を持たないことを明確に述べている。これは、申請者が発明のIPを所有するという原則（3.2）をデータ提供者側から確認する規定である。EGAやNIHには、このような提供者側の権利不行使を明記した条文はない。</td>
+</tr>
+<tr>
+<td>I-03.6</td>
+<td class="en"><span style='color: red;'>The </span><span style='color: black;'>Applicant</span><span style='color: red;'> acknowledges that the </span><span style='color: black;'>Data</span><span style='color: red;'> resource has been produced using public funding and the contribution of participants, with the express purpose of promoting health-related research which is in the public interest.</span></td>
+<td><span style='color: red;'></span><span style='color: black;'>申請者</span><span style='color: red;'>は、</span><span style='color: black;'>データ</span><span style='color: red;'>リソースが、公益に資する健康関連研究を促進するという明確な目的をもって、公的資金および参加者の貢献を用いて作成されたことを認識する。</span></td>
+<td>【最大公約数パターン】: UKBBに特有の前文的な条項ですが、EGAやNIHのリソースも同様の公的・倫理的背景を持っています。この条項は、後のIP制限（3.7）や成果公開義務の論理的な根拠となるため重要です。UKBBの条文を一般化し、すべてのMTAの根底にある理念として統合条文を作成しました。</td>
+<td>3.6</td>
+<td class="en" style="color: black;">3.6 However, the Applicant acknowledges that the UK Biobank resource has been produced using a combination of the goodwill and contribution of 500,000 UK participants, charitable and public funding, the use of public resources (such as UK health-record data) and established with the express purpose of promoting the conduct of health-related research which is in the public interest.</td>
+<td style="color: black;">3.6 しかし、申請者は、UK Biobankリソースが、50万人の英国参加者の善意と貢献、慈善および公的資金、公的リソース（英国の健康記録データなど）の使用を組み合わせて作成され、公益に資する健康関連研究の実施を促進するという明確な目的をもって設立されたことを認識する。</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>一致点：他MTAに直接対応する条文なし。</td>
+<td>不一致点：UKBBは、データリソースが参加者の善意や公的資金といった公共財によって成り立っていることを申請者に確認させている。これは、後のIP制限や研究成果の還元といった義務の倫理的根拠を明確にするための、UKBBに特徴的な規定である。</td>
+</tr>
+<tr>
+<td>I-03.7</td>
+<td class="en"><span style='color: red;'>The </span><span style='color: black;'>Applicant</span><span style='color: red;'> agrees that it shall not file any patents with claims directed to, or otherwise seek to claim or enforce any </span><span style='color: black;'>IP</span><span style='color: red;'> in, the genotype-phenotype data within the original </span><span style='color: black;'>Data</span><span style='color: red;'> or in such data generated by the </span><span style='color: black;'>Applicant</span><span style='color: red;'>.</span></td>
+<td><span style='color: red;'></span><span style='color: black;'>申請者</span><span style='color: red;'>は、元の</span><span style='color: black;'>データ</span><span style='color: red;'>に含まれる、または</span><span style='color: black;'>申請者</span><span style='color: red;'>によって生成された遺伝子型-表現型データに対して、特許請求を行う、あるいはその他の方法で</span><span style='color: black;'>知的財産</span><span style='color: red;'>を主張または行使しないことに同意する。</span></td>
+<td>【最厳格ルール採用パターン】: UKBBが定める「遺伝子型-表現型データ」への特許出願禁止という非常に具体的な規定を基にしました。これはEGAの「データへのIP主張禁止」やNIHの「IP主張を避けるよう要請」という趣旨と軌を一にするものです。3者の中で最も具体的かつ厳格なUKBBのルールを採用し、データのコモディティ化を防ぐという共通の目的を達成するための統合条文としました。</td>
+<td>3.7</td>
+<td class="en" style="color: black;">3.7 Taking into account the acknowledgements in clause 3.6, the Applicant agrees that it shall not and shall not attempt to:<br>3.7.1 file any patents with claims directed to; or<br>3.7.2 otherwise seek to claim or enforce any IPRs in;<br>the genotype-phenotype data within the Materials or in the genotype-phenotype data which has been generated by the Applicant in the course of the Approved Research Project.</td>
+<td style="color: black;">3.7 第3.6条の認識事項を考慮し、申請者は、以下のことを行わないこと、また試みないことに同意する。<br>3.7.1 を対象とする特許を出願すること、または<br>3.7.2 においてその他の知的財産権を主張または行使しようとすること。<br>マテリアル内の遺伝子型-表現型データ、または承認された研究プロジェクトの過程で申請者が生成した遺伝子型-表現型データ。</td>
+<td>9</td>
+<td class="en" style="color: blue;">9. The User Institution agrees not to make intellectual property claims on these Data and not to use intellectual property protection in ways that would prevent or block access to, or use of, any element of these Data, or conclusion drawn directly from these Data.</td>
+<td style="color: blue;">9. 利用機関は、これらのデータについて知的財産権の主張を行わず、また、これらのデータのいかなる要素、またはこれらのデータから直接導き出された結論へのアクセスまたは使用を妨げたり、ブロックしたりする方法で知的財産保護を使用しないことに同意する。</td>
+<td>9.2, 9.3</td>
+<td class="en" style="color: green;">9.2. The <b>NIH</b> considers these data as pre-competitive and urges Approved Users to avoid making IP claims derived directly from the genomic dataset(s).<br>9.3. It is expected that these <b>NIH</b>-provided data, and conclusions derived therefrom, will remain freely available...</td>
+<td style="color: green;">9.2. <b>NIH</b>はこれらのデータを競争前のものとみなし、承認された利用者がゲノムデータセットから直接派生するIPの主張を避けるよう強く求める。<br>9.3. これらの<b>NIH</b>提供のデータ、およびそこから導き出される結論は、引き続き自由に利用できることが期待される...</td>
+<td>一致点：3者とも、元データやそれに準ずる基本的な解析結果（遺伝子型-表現型データ、データから直接導かれる結論など）に対して排他的なIPを主張することを制限する点で一致している。これは、データが「競争前の（pre-competitive）」リソースであり、広く研究コミュニティで利用されるべきであるという共通の認識に基づいている。</td>
+<td>不一致点：制限の具体性と法的拘束力が異なる。<br>・<b>UKBB</b>: 「遺伝子型-表現型データ」への特許出願を明確に「禁止」しており、最も具体的で厳しい。<br>・<b>EGA</b>: 「データおよびデータから直接導かれる結論」へのIP主張を「禁止」しており、UKBBと同様に強い拘束力を持つ。<br>・<b>NIH</b>: IP主張を避けるよう「強く求める（urges）」という表現で、法的な禁止ではなく、コミュニティの規範に従うことを期待する形をとっている。</td>
+</tr>
+<tr>
+<td>I-03.8</td>
+<td class="en"><span style='color: red;'>The rights granted to the </span><font color="black">Applicant</font><span style='color: red;'> to use the </span><font color="black">Data</font><span style='color: red;'> do not include the right to sub-licence, publish or distribute any of the </span><font color="black">Data</font><span style='color: red;'>, except for the sole purpose of including a commensurate amount of supporting data in the </span><font color="black">Applicant's Publication of its Findings</font><span style='color: red;'>.</span></td>
+<td><span style='color: red;'></span><font color="black">申請者</font><span style='color: red;'>に付与された</span><font color="black">データ</font><span style='color: red;'>を使用する権利には、</span><font color="black">申請者</font><span style='color: red;'>が</span><font color="black">その研究成果を発表</font><span style='color: red;'>する際に、相応量の裏付けデータを含めるという唯一の目的を除き、</span><font color="black">データ</font><span style='color: red;'>のいずれかをサブライセンス、公表、または配布する権利は含まれない。</span></td>
+<td>【積み上げパターン】: UKBBの条文を基本とし、第三者へのデータ共有を原則禁止するルール（I-02.2）の例外を定めるものとして位置づけました。論文発表時に必要な範囲でのデータ開示は、EGAやNIHでも当然に認められているため、この例外規定を明文化することは3つのMTAの趣旨に合致します。UKBBの条文を一般化し、この例外を明確にする統合条文を作成しました。</td>
+<td>3.8</td>
+<td class="en" style="color: black;">3.8 UK Biobank expressly excludes any right of the Applicant to sub-licence any of the rights granted to the Materials under this MTA or to publish or distribute any of the Materials, except for the sole purpose of including a commensurate amount of supporting data in the Applicant's publication of its Findings.</td>
+<td style="color: black;">3.8 UK Biobankは、申請者がその所見の公表に相応量の裏付けデータを含めるという唯一の目的を除き、本MTAに基づきマテリアルに付与されたいかなる権利もサブライセンスする権利、またはいかなるマテリアルも公表または配布する権利を、明示的に除外する。</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>一致点：他MTAに直接対応する条文なし。</td>
+<td>不一致点：UKBBは、データ自体の公開・配布を原則禁止しつつ、例外として「論文発表時に必要な裏付けデータ」の公開のみを許可することを明確に規定している。これは、データ共有禁止の原則（2.2）と成果公表義務の間の線引きを明確にするための、UKBBに特有の詳細な規定である。</td>
+</tr>
+<tr>
+<td>I-03.9</td>
+<td class="en"><span style='color: red;'>The rights granted under this Agreement to the </span><span style='color: black;'>Applicant</span><span style='color: red;'> to use the </span><span style='color: black;'>Data</span><span style='color: red;'> are for the </span><span style='color: black;'>Approved Research Project</span><span style='color: red;'> only.</span></td>
+<td><span style='color: red;'>本契約に基づき</span><span style='color: black;'>申請者</span><span style='color: red;'>に付与された</span><span style='color: black;'>データ</span><span style='color: red;'>を使用する権利は、</span><span style='color: black;'>承認された研究プロジェクト</span><span style='color: red;'>のためのみのものである。</span></td>
+<td>【最大公約数パターン】: これは利用目的の制限（I-02.1）を再確認する念のための条項です。3つのMTAすべてが、利用目的を承認された研究に限定しているため、この原則は完全に共通しています。UKBBの条文を一般化し、この重要な原則を再度強調する形で統合条文を作成しました。</td>
+<td>3.9</td>
+<td class="en" style="color: black;">3.9 For the avoidance of doubt, the rights granted under this MTA to the Applicant to use the Materials are for the Permitted Purpose only.</td>
+<td style="color: black;">3.9 疑義を避けるため、本MTAに基づき申請者に付与されたマテリアルを使用する権利は、許可された目的のためのみのものである。</td>
+<td>1</td>
+<td class="en" style="color: blue;">1. The User Institution agrees to only use these Data for the purpose of the Project (described in Appendix II) and only for Research Purposes. ...</td>
+<td style="color: blue;">1. 利用機関は、これらのデータをプロジェクト（付録IIに記載）の目的のため、かつ研究目的のためにのみ使用することに同意する。...</td>
+<td>1.2</td>
+<td class="en" style="color: green;">1.2. Research use will occur solely in connection with the approved research project described in the DAR...</td>
+<td style="color: green;">1.2. 研究利用は、DARに記載された承認済みの研究プロジェクトにのみ関連して行われる...</td>
+<td>一致点：3者とも、データの利用が承認された研究目的に限定されることを繰り返し強調している点で一致している。</td>
+<td>不一致点：UKBBは「疑義を避けるため（For the avoidance of doubt）」という法的な表現を用いて、この制限を念押ししている。EGAとNIHは、それぞれの契約の冒頭で利用目的を定義しており、再度の言及はない。</td>
+</tr>
+<tr>
+<td colspan="15"><b>UKBBとの対応がなかった残存条文 (EGA, NIH)</b></td>
+</tr>
+<tr>
+<td>I-E07</td>
+<td class="en"><span style='color: red;'>The </span><span style='color: blue;'>Applicant</span><span style='color: red;'> agrees to follow established community guidelines for data sharing and publication, such as the Fort Lauderdale Guidelines and the Toronto Statement, including recognizing the contribution of the </span><span style='color: blue;'>Data Providers</span><span style='color: red;'> and including a proper acknowledgement in all reports or publications.</span></td>
+<td><span style='color: red;'></span><span style='color: blue;'>申請者</span><span style='color: red;'>は、フォートローダーデール・ガイドラインやトロント声明のような、データ共有と出版に関する確立されたコミュニティのガイドラインに従うことに同意する。これには、</span><span style='color: blue;'>データ提供者</span><span style='color: red;'>の貢献を認識し、すべての報告書や出版物に適切な謝辞を含めることが含まれる。</span></td>
+<td>【積み上げパターン】: EGAが明示的に要求する国際的なガイドライン（フォートローダーデール等）への準拠を基本としました。これはNIHの謝辞要求（10.2）の背景にある理念とも共通します。EGAの条文を一般化し、特定のガイドライン名を例示として含めることで、オープンサイエンスのコミュニティ規範を遵守するという、より広い概念の統合条文としました。</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>7</td>
+<td class="en" style="color: blue;">7. The User Institution agrees to follow the <b>Fort Lauderdale Guidelines</b> (http://www.wellcome.ac.uk/stellent/groups/corporatesite/@policy_communications/documents/web_document/wtd003207.pdf) and the <b>Toronto Statement</b> (http://www.nature.com/nature/journal/v461/n7261/full/461168a.html). This includes but is not limited to recognising the contribution of the Data Producers and including a proper acknowledgement in all reports or publications resulting from the use of these Data.</td>
+<td style="color: blue;">7. 利用機関は、<b>フォートローダーデール・ガイドライン</b>および<b>トロント声明</b>に従うことに同意する。これには、データ作成者の貢献を認識し、これらのデータの使用から生じるすべての報告書または出版物に適切な謝辞を含めることが含まれるが、これに限定されない。</td>
+<td>10.2</td>
+<td class="en" style="color: green;">10.2. Approved Users agree to acknowledge the Submitting Investigator(s)... the primary funding organization... and the <b>NIH</b>-designated data repository, in all oral and written presentations, disclosures, and publications resulting from any analyses of controlled-access data.</td>
+<td style="color: green;">10.2. 承認された利用者は、アクセス制限付きデータの分析から生じるすべての口頭および書面による発表、開示、出版物において、データ提供研究者、主要な資金提供機関、および<b>NIH</b>指定のデータリポジトリを謝辞に記載することに同意する。</td>
+<td>一致点：EGAとNIHは、研究成果を発表する際に、データ提供者や資金提供機関への謝辞を適切に記載することを求めている点で一致している。これは研究コミュニティにおける標準的な慣行を契約上の義務としている。</td>
+<td>不一致点：EGAは「フォートローダーデール・ガイドライン」「トロント声明」といった、国際的に認知された特定のデータ共有原則への準拠を明確に要求しており、より広範な倫理的・行動的規範を課している。NIHは謝辞に記載すべき対象（データ提供者、資金提供機関、リポジトリ）を具体的に列挙している。</td>
+</tr>
+<tr>
+<td>I-N01.3</td>
+<td class="en"><span style='color: red;'>Investigators interested in using Cloud Computing for data storage and analysis must request permission to use Cloud Computing in the application and identify the Cloud Service Provider (CSP) or Private Cloud System (PCS) that they propose to use.</span></td>
+<td><span style='color: red;'>データの保管および分析にクラウドコンピューティングの使用を希望する研究者は、申請書でクラウドコンピューティングの使用許可を申請し、使用を提案するクラウドサービスプロバイダー（CSP）またはプライベートクラウドシステム（PCS）を特定しなければならない。</span></td>
+<td>【積み上げパターン】: NIHにのみ存在するクラウド利用に関する明示的な規定を、今後のデータ利用形態の標準として統合条文に採用しました。申請時に利用するクラウド環境を特定し、許可を得るという手続きは、データセキュリティを確保する上で重要なため、他のMTAのセキュリティ要件を補完するものとなります。</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>1.3</td>
+<td class="en" style="color: green;">1.3. Investigators interested in using Cloud Computing for data storage and analysis must request permission to use Cloud Computing in the DAR and identify the Cloud Service Provider (CSP) or providers and/or Private Cloud System (PCS) that they propose to use. They must also submit a Cloud Computing Use Statement as part of the DAR.</td>
+<td style="color: green;">1.3. データの保管および分析にクラウドコンピューティングの使用を希望する研究者は、DARでクラウドコンピューティングの使用許可を申請し、使用を提案するクラウドサービスプロバイダー（CSP）またはプライベートクラウドシステム（PCS）を特定しなければならない。彼らはまた、DARの一部としてクラウドコンピューティング利用声明を提出しなければならない。</td>
+<td>一致点：他MTAに直接対応する条文なし。</td>
+<td>不一致点：NIHは、クラウドコンピューティングを利用したデータ保管・分析について、申請時に明示的な許可を求め、利用するCSP等を特定することを義務付けている。これは、近年の研究環境の変化に対応した非常に具体的かつ先進的な規定であり、UKBBやEGAには見られない。</td>
+</tr>
+</tbody>
 </table>
 </body>
 </html>
