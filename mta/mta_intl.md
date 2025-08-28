@@ -1,12 +1,4 @@
-大変申し訳ございません。ご指摘の通り、前回の回答が途中で途切れてしまいました。一度に出力できる文字数にシステム上の上限があり、ご依頼の処理結果が長文になったため、全文を一度に表示できずに途切れてしまったことが原因です。
-
-ご不便をおかけしましたことを深くお詫び申し上げます。
-
-今回は必ず全文をお届けするため、**出力を3回に分割**させていただきます。大変お手数ですが、それぞれの返信の後に「続きをお願いします」とご入力いただけますでしょうか。
-
-まずは、**1回目の出力として、I-01.01からI-05.13まで**を以下に記載します。
-
-***
+## 1. UK Biobankによるマテリアルの提供
 
 *   **外国統合No.:** I-01.01
     *   **外国統合題名英:** Supply of Data
@@ -42,6 +34,8 @@
     *   **外国統合英:** The **Applicant** agrees that the **Data** are provided on an "as is" basis. The **Data Provider** makes no warranty of satisfactory quality or fitness for a particular purpose or use, or that use of the **Data** shall not infringe the rights of any third party. The **Data Provider** makes no warranty or representation, express or implied as to the accuracy, quality or comprehensiveness of these **Data**, and all reasonable efforts have been taken to ensure the accuracy and reliability of **Data**. Except as expressly stated in this MTA, all warranties, terms and conditions, whether express or implied by statute, common law or otherwise, are excluded to the fullest extent permitted by law.
     *   **外国統合日:** **申請者**は、**データ**が「現状有姿」で提供されることに同意します。 **データ提供者**は、満足のいく品質、特定の目的や用途への適合性、または**データ**の使用が第三者の権利を侵害しないことを保証しません。 **データ提供者**は、これらの**データ**の正確性、品質、または網羅性について、明示的または黙示的にかかわらず、いかなる保証も表明も行いません。 そして、 **データ**の正確性と信頼性を確保するために、あらゆる合理的な努力が払われています。 本MTAで明示的に定められている場合を除き、制定法、慣習法、その他により明示的または黙示的に定められたすべての保証、条件は、法律で認められる最大限の範囲で除外されます。
     *   **コンセプト:** 1.2. 提供者の保証と免責
+
+## 2. 申請者によるマテリアルの利用
 
 *   **外国統合No.:** I-02.01.01
     *   **外国統合題名英:** Usage in Accordance with MTA
@@ -120,6 +114,8 @@
     *   **外国統合日:** **データ提供者**は、本MTAの期間中、許可された目的のために**データ**を使用するための、取り消し可能、全世界的、ロイヤリティフリー、非独占的、譲渡不能なライセンス（ただし所有権は除く）を、本MTAの諸条件に従うことを条件として、ここに**申請者**に付与します。
     *   **コンセプト:** 2.1. 利用目的・範囲の制限
 
+## 3. 申請者によるデータの生成
+
 *   **外国統合No.:** I-03.01
     *   **外国統合題名英:** Categorization of Generated Data
     *   **外国統合題名日:** 生成データの分類
@@ -182,6 +178,8 @@
     *   **外国統合英:** For the avoidance of doubt, the rights granted under this MTA to the **Applicant** to use the **Data** are for the Permitted Purpose only.
     *   **外国統合日:** 疑義を避けるため、本MTAに基づき**申請者**に付与された**データ**を使用する権利は、許可された目的にのみ限定されるものとします。
     *   **コンセプト:** 2.1. 利用目的・範囲の制限
+
+## 4. 申請者からの確認事項
 
 *   **外国統合No.:** I-04.01
     *   **外国統合題名英:** Compliance with Laws and Regulations
@@ -266,6 +264,8 @@
     *   **外国統合英:** Without prejudice to the other provisions of this MTA, any actual or anticipatory **Breach** of any provision of clauses 4.1, 4.2 and 4.4 to 4.7 inclusive shall entitle **Data Provider** to terminate this Agreement with immediate effect and require the immediate return or destruction of any **Data** provided by **Data Provider**.
     *   **外国統合日:** 本MTAの他の規定を害することなく、条項4.1、4.2、および4.4から4.7までのいずれかの規定に対する実際のおよび予期される**違反**があった場合、**データ提供者**は本契約を即時に解除し、**データ提供者**から提供されたすべての**データ**の即時返却または破棄を要求する権利を有します。
     *   **コンセプト:** 3.4. 契約違反時の措置
+
+## 5. 一般向け要約の公表、年次報告書の提出、所見の返還と公表
 
 *   **外国統合No.:** I-05.01
     *   **外国統合題名英:** Public Posting of Research Summary
@@ -365,10 +365,6 @@
     *   **外国統合日:** ただし、上記の条項5.12の規定にかかわらず、**申請者**は、その所見の報告が合理的に論争を引き起こす可能性が高い、またはその他の方法で重大な世間の注目を集める可能性が高い場合、事前に（書面で）**データ提供者**に速やかに通知する必要があります。そのような状況において、**データ提供者**は、**申請者**による検討のために、報告書に対して適切と判断する勧告、留保、または提案を行う権利（およびそれを公表する権利）を留保します。
     *   **コンセプト:** 4.1. 成果の公開と謝辞
 
-    承知いたしました。2回目の出力として、I-05.14からI-14.06までの内容を以下に記載します。
-
-***
-
 *   **外国統合No.:** I-05.14
     *   **外国統合題名英:** Acknowledgement in Title/Abstract
     *   **外国統合題名日:** タイトル/抄録での謝辞
@@ -389,6 +385,8 @@
     *   **外国統合英:** This acknowledgement to **Data Provider** should, when possible, be linked to reference search tools (such as PubMed and MEDLINE and/or DOI reference). **Approved Researchers** further agree that the acknowledgment shall include the dbGaP accession number to the specific version of the **dataset(s)** analyzed.
     *   **外国統合日:** この**データ提供者**への謝辞は、可能な限り、参照検索ツール（PubMedやMEDLINE、および/またはDOI参照など）にリンクされるべきです。 **承認済み研究者**はさらに、謝辞には分析された**データセット**の特定バージョンへのdbGaPアクセッション番号が含まれるものとすることに同意します。
     *   **コンセプト:** 4.1. 成果の公開と謝辞
+
+## 6. 料金
 
 *   **外国統合No.:** I-06.01
     *   **外国統合題名英:** Payment of Charges
@@ -418,6 +416,8 @@
     *   **外国統合日:** **申請者**による本MTAの受領から90日以内にアクセス料金（および適用されるVAT）の支払いが行われない場合、**申請者**は**データ提供者**のリソースおよび**データ**へのアクセスを再申請する必要があります。
     *   **コンセプト:** 1.4. 料金
 
+## 7. 年次確認と監査
+
 *   **外国統合No.:** I-07.01
     *   **外国統合題名英:** Annual Confirmation of Compliance
     *   **外国統合題名日:** 年次の遵守確認
@@ -446,6 +446,8 @@
     *   **外国統合日:** **データ提供者**は、その監査権が年に1回を超えて行使されず、**申請者**への合理的な通知（データセキュリティインシデントまたはその他の重大なインシデントの場合は即時となる場合がある）に基づいて行使されることを確認します。実行可能な限り、**データ提供者**は、他の関連当事者と現地訪問および監査を調整することに同意します。
     *   **コンセプト:** 3.3. 監査・報告
 
+## 8. 秘密保持
+
 *   **外国統合No.:** I-08.01
     *   **外国統合題名英:** Confidentiality of Applicant's Information
     *   **外国統合題名日:** 申請者の情報の秘密保持
@@ -459,6 +461,8 @@
     *   **外国統合英:** **Data Provider** may disclose the **Applicant**'s Confidential Information where expressly permitted by this MTA or when:<br>8.2.1 it is required to be disclosed by law, by any governmental or other regulatory authority, by a court or other authority of competent jurisdiction; or<br>8.2.2 it can be shown by **Data Provider** (to the **Applicant**'s reasonable satisfaction) to have been known by **Data Provider** before disclosure to it by such **Applicant**; or<br>8.2.3 it was lawfully disclosed to **Data Provider** by a third party who did not impose any restrictions on its disclosure; or<br>8.2.4 the information was in (or enters into) the public domain other than by reason of a **Breach** of this clause by **Data Provider**; or<br>8.2.5 **Data Provider** and the **Applicant** agree, acting reasonably, that such information is trivial or obvious, or they agree in writing that such disclosure may be permitted.
     *   **外国統合日:** **データ提供者**は、本MTAで明示的に許可されている場合、または以下の場合に、**申請者**の機密情報を開示することができます。<br>8.2.1 法律、政府またはその他の規制当局、裁判所またはその他の管轄当局によって開示が要求される場合。<br>8.2.2 **データ提供者**が、当該**申請者**による開示前に知っていたことを（**申請者**の合理的な満足のいくように）示すことができる場合。<br>8.2.3 開示に制限を課さなかった第三者によって、**データ提供者**に合法的に開示された場合。<br>8.2.4 **データ提供者**による本条項の**違反**以外の理由で、情報が公知であった（または公知となる）場合。<br>8.2.5 **データ提供者**と**申請者**が、合理的に行動し、当該情報が些細または明白であることに同意する場合、または書面で当該開示が許可されることに同意する場合。
     *   **コンセプト:** 3.2. 秘密保持
+
+## 9. データ保護
 
 *   **外国統合No.:** I-09.01
     *   **外国統合題名英:** Relationship of the Parties (Data Protection)
@@ -502,6 +506,8 @@
     *   **外国統合日:** **申請者**は、移転がデータ保護法に準拠していることを保証するために必要な措置を講じない限り、**英国**外の領域（または条項9.4が適用される場合、その後の領域で処理が行われる場合）で参加者レベルの**データ**を処理してはならず、また処理を許可してはなりません。
     *   **コンセプト:** 2.4. 法令・倫理遵守
 
+## 10. 責任の制限
+
 *   **外国統合No.:** I-10.01
     *   **外国統合題名英:** Limitation of Liability (Amount)
     *   **外国統合題名日:** 責任の制限（金額）
@@ -520,7 +526,7 @@
     *   **外国統合題名英:** Non-Excludable Liability
     *   **外国統合題名日:** 除外されない責任
     *   **外国統合英:** Nothing in this MTA shall operate to exclude or limit any Liability which cannot legally be limited including but not limited to liability for: death or personal injury caused by negligence; for its fraud or fraudulent misrepresentation; and for any matter for which it is not permitted by law to exclude or limit, or to attempt to exclude or limit, its Liability.
-    *   **外国統合日:** 本MTAのいかなる規定も、過失による死亡または人身傷害、詐欺または詐欺的表明、および法律によりその責任を除外または制限すること、あるいは除外または制限しようとすることが許可されていない事項に対する責任を含むがこれらに限定されない、法的に制限できないいかなる責任も除外または制限するものとして機能しないものとします。
+    *   **外国統合日:** 本MTAのいかなる規定も、過失による死亡または人身傷害、詐欺または詐欺的表明、および法律によりその責任を除外または制限すること、あるいは除外または制限しようとすることが許可されていない事項に対する責任を含むがこれに限定されない、法的に制限できないいかなる責任も除外または制限するものとして機能しないものとします。
     *   **コンセプト:** 5.1. 責任の制限
 
 *   **外国統合No.:** I-10.04
@@ -536,6 +542,8 @@
     *   **外国統合英:** Nothing in this MTA shall operate to exclude or limit the **Applicant**’s Liability to **Data Provider** for any loss, damage, costs or expenses arising from:<br>10.5.1 the **Applicant**’s failure to comply with clause 9 (Data Protection) and clauses 14.5 to 14.10 inclusive (Third-Party Processors);<br>10.5.2 any **Breach** of clause 2.2 or any circumstance in which the **Applicant** sub-licenses, distributes or otherwise shares the **Data** (including any **IP**s) with any unauthorised person or third party;<br>10.5.3 any circumstance set out in clauses 4.5 and 4.7;<br>10.5.4 any Data Security Incident which is caused by the **Applicant**.
     *   **外国統合日:** 本MTAのいかなる規定も、以下の事由から生じるいかなる損失、損害、費用、または経費について、**データ提供者**に対する**申請者**の責任を除外または制限するものとして機能しないものとします。<br>10.5.1 **申請者**による条項9（データ保護）および条項14.5から14.10まで（第三者処理者）の不遵守。<br>10.5.2 条項2.2の**違反**、またはいかなる状況において**申請者**が**データ**（**IP**を含む）を無許可の個人または第三者にサブライセンス、配布、またはその他の方法で共有した場合。<br>10.5.3 条項4.5および4.7に定められたいかなる状況。<br>10.5.4 **申請者**によって引き起こされたいかなるデータセキュリティインシデント。
     *   **コンセプト:** 5.1. 責任の制限
+
+## 11. 契約期間
 
 *   **外国統合No.:** I-11.01
     *   **外国統合題名英:** Term of Agreement
@@ -557,6 +565,8 @@
     *   **外国統合英:** For the avoidance of doubt, the extensions set out in clause 11.2 above can be applied cumulatively (subject to applicable Access Charges) so that, for example, an extension of 3 years may be granted to take the **Approved Research Project** duration from 3 years to 6 years, and this may then be extended by a further 3 years to 9 years and so on.
     *   **外国統合日:** 疑義を避けるため、上記の条項11.2に定める延長は、累積的に適用することができます（適用されるアクセス料金を条件とします）。したがって、例えば、**承認済み研究プロジェクト**の期間を3年から6年にするために3年間の延長が許可され、その後さらに3年間延長して9年とする、といったことが可能です。
     *   **コンセプト:** 1.3. 契約期間と終了
+
+## 12. 契約解除とその効果
 
 *   **外国統合No.:** I-12.01
     *   **外国統合題名英:** Termination for Cause
@@ -593,12 +603,16 @@
     *   **外国統合日:** 本MTAの**終了**または満了は、**終了**または満了日までに発生した当事者の権利および義務に影響を与えないものとします。
     *   **コンセプト:** 1.3. 契約期間と終了
 
+## 13. 通知
+
 *   **外国統合No.:** I-13.01
     *   **外国統合題名英:** Notices
     *   **外国統合題名日:** 通知
     *   **外国統合英:** Notices required under this MTA shall be in writing and shall be: sent by email to the addresses set out below; or (in the event of failure to deliver an email) by post to the registered address of **Data Provider** or the **Applicant**.<br>Any notice shall be deemed to be received: if sent by email, upon receipt at the recipient’s email server, (or, if this time falls outside business hours in the place of receipt, when business hours resume); or if sent by post, on the date of delivery if a business day in the place of receipt (or, if not a business day, on the first business day thereafter).<br>Notices to **Data Provider** shall be sent to the access team at access@ukbiobank.ac.uk. Notices to the **Applicant** shall be sent by email to the relevant **Applicant** and the **Principal Investigator (PI)**.
     *   **外国統合日:** 本MTAに基づき要求される通知は、書面で行い、以下のアドレスに電子メールで送信するか、（電子メールの配信に失敗した場合）**データ提供者**または**申請者**の登録住所に郵送するものとします。<br>いかなる通知も、電子メールで送信された場合は受信者の電子メールサーバーで受信した時点（または、この時刻が受信地の営業時間外である場合は、営業時間が再開した時点）、郵送された場合は受信地の営業日である配達日（または、営業日でない場合は、その後の最初の営業日）に受信されたものとみなされます。<br>**データ提供者**への通知は、アクセスチーム（access@ukbiobank.ac.uk）に送信するものとします。**申請者**への通知は、関連する**申請者**および**主任研究者（PI）**に電子メールで送信するものとします。
     *   **コンセプト:** 5.4. その他
+
+## 14. 関連会社、譲渡、下請け
 
 *   **外国統合No.:** I-14.01
     *   **外国統合題名英:** Use by Affiliates
@@ -635,9 +649,7 @@
     *   **外国統合日:** **申請者**は、第三者処理業者が共同研究者ではなく、許可された目的に関連する**データ**の計算および分析の個別要素の目的（「処理タスク」）のためにのみ関与することを保証します。<br>[条項14.7-14.10は、処理業者の評価、データ削除を含む契約要件、セキュリティ基準、再識別化の禁止などを詳述]
     *   **コンセプト:** 5.2. 下請け・委託
 
-    承知いたしました。これが最後の出力となります。I-15から末尾までの内容を以下に記載します。
-
-***
+## 15. 不可抗力
 
 *   **外国統合No.:** I-15
     *   **外国統合題名英:** Force Majeure
@@ -646,12 +658,16 @@
     *   **外国統合日:** 一方の当事者が不可抗力事由により本MTAに基づく義務の履行を妨げられ、妨害され、または遅延した場合、当該当事者は、その開始日および不可抗力事由が本MTAに基づく義務を履行する能力に及ぼす影響を、他方の当事者に速やかに通知するものとします。両当事者が相互に合意した場合、影響を受けた当事者の義務は、不可抗力事由が継続する限り中断されるものとします。<br>不可抗力事由の影響を受けた当事者は、不可抗力事由によって妨げられ、妨害され、または遅延した義務の不履行または履行遅滞について、当該当事者がその影響を最小限に抑えるためにあらゆる合理的な努力を払い、当該不可抗力事由の解消後できるだけ早く履行を再開することを条件として、責任を負わないものとします。不履行期間が不可抗力事由の開始から90日を超えた場合、影響を受けていない当事者は、他方の当事者への書面による通知をもって、他方の当事者に30日間の書面による通知を行うことにより本MTAを解除する選択肢を有するものとします。
     *   **コンセプト:** 5.4. その他
 
+## 16. 紛争解決
+
 *   **外国統合No.:** I-16
     *   **外国統合題名英:** Dispute Resolution
     *   **外国統合題名日:** 紛争解決
     *   **外国統合英:** If a Dispute arises, the parties shall follow the procedure set out in this clause 16.<br>[Clause details a multi-step process: written notice, good faith negotiation by representatives, escalation to senior officers, then mediation in accordance with the Centre for Effective Dispute Resolution (**CEDR**) Model Mediation Procedure. If mediation fails, court proceedings may be issued.]
     *   **外国統合日:** 紛争が生じた場合、当事者は本条項16に定める手続きに従うものとします。<br>[本条項は、書面による通知、代表者による誠実な交渉、上級役員への上程、そして実効的紛争解決センター（**CEDR**）モデル調停手続きに従った調停という、多段階のプロセスを詳述しています。調停が不調に終わった場合、訴訟を提起することができます。]
     *   **コンセプト:** 5.3. 紛争解決
+
+## 17. 一般条項
 
 *   **外国統合No.:** I-17.01
     *   **外国統合題名英:** Change of PI
