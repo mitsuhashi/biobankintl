@@ -1,17 +1,15 @@
 ## UKBB、EGA、NIHのMTAの条文対応表と統合条文の作成
 
-### プロンプトの全体構成
-
-#### 1. 役割と目的の定義
+### 1. 役割と目的の定義
 あなたは、複数のMTA（Material Transfer Agreement）を比較・分析し、統合する専門家です。目的は、UKBB, EGA, NIHの3つのMTAから共通項と相違点を抽出し、それらを網羅した汎用的な「統合条文」を作成することです。
 
-#### 2. 入力ファイル定義
+### 2. 入力ファイル定義
 *   UKBB: `mta_ukbb.md`
 *   EGA: `mta_ega.md`
 *   NIH: `mta_nih.md`
 * 　入力ファイルが読み込まれていない場合は、そのことを指摘して処理を中止してください。
 
-#### 3. 用語統一の事前定義
+### 3. 用語統一の事前定義
 統合条文の作成に先立ち、以下の**統一用語対応表**をすべての処理の前提として使用してください。これにより、出力の一貫性を確保します。
 
 | 統合用語 | UKBB | EGA | NIH |
@@ -29,31 +27,31 @@
 | **Data Derivatives**|	Results Data, Other Data|	material derived from these Data|	Data Derivatives|
 
 
-#### 4. 処理ステップの詳細化
+### 4. 処理ステップの詳細化
 
-**ステップ0: 入力ファイルの確認と宣言**
+#### ステップ0: 入力ファイルの確認と宣言
 *   処理を開始する前に、指定された3つの入力ファイル（mta_ukbb.md, mta_ega.md, mta_nih.md）を正常に読み込めたことを確認し、「3つのMTAファイルを正常に読み込みました。処理を開始します。」と宣言してください。
 
-**ステップ1: 条文の構造化と主要コンセプトのマッピング**
+#### ステップ1: 条文の構造化と主要コンセプトのマッピング
 *   以下の表記は条文間の親子関係を表現しています。その階層構造を理解して解析してください。以下のMTAの階層構造についてを参照してください。
-    * 箇条書きのmarkdown構造、インデント（字下げ）
-    * 条文番号（例: 1.1は1の子要素）
-    * コロンで終了している条文のその子階層
+    *   箇条書きのmarkdown構造、インデント（字下げ）
+    *   条文番号（例: 1.1は1の子要素）
+    *   コロンで終了している条文のその子階層
 *   UKBBの第２階層の各条文（例：1.1）を１論理単位としてEGA, NIHとのマッピング処理を行なってください。
 *   親条文（例: 1.2）が複数の子条文（例: 1.2.1, 1.2.2）を持つ場合、親条文と子条文1, 親条文と子条文2というように意味を崩さずに独立した文章に分割して考えてください。下記例のように、親条文の文意（主語、動詞など）を各子条文に補完して、一つの独立した条文として処理してください。
-　　*  階層構造の処理例:
-       *  入力: 1.2 UK Biobank warrants...: 1.2.1 it is entitled...
-       *  AIが解釈すべき完全な文章: UK Biobank warrants that it is entitled...
+    *  階層構造の処理例
+        *  入力: 1.2 UK Biobank warrants...: 1.2.1 it is entitled...
+        *  AIが解釈すべき完全な文章: UK Biobank warrants that it is entitled...
 *   UKBBの各条文が持つ中心的な法的意味を分析し、「主要コンセプトリスト」から最も関連性の高いキーワードを内部的なタグとして**原則1個（ただし、主要なコンセプトが複数存在する場合は、重要度順に複数）**付与してください。
 *   マッピングを行う際は、以下の視点を考慮し、どれかに一致する場合はタグを付与してください。
     *   直接的対応: 条文の目的と内容がほぼ一致するもの。
     *   間接的対応: ある行為を規定する条文（例: 利用目的の制限）と、その違反時の罰則を規定する条文（例: 違反時の契約解除）など、論理的に関連するもの。
     *   概念的対応: 条文の文言は異なるが、背景にある法的・倫理的原則（例: データ利用の透明性確保）が共通するもの。
 *  「主要コンセプトリスト」付与できない場合は、新しいコンセプトを追加してください。
-*   次に、EGAとNIHの全条文をスキャンし、同じタグが付与されうる関連性の高い条文をUKBBとマッピングしてください。これにより、網羅的かつ体系的な対応付けを行います。
+*   次に、EGAとNIHの全条文をスキャンし、同じタグが付与されうる関連性の高い条文EGA,NIHの条文をUKBBの条文とマッピング（対応づけ）してください。これにより、網羅的かつ体系的な対応付けを行います。
 *   マッピング結果を内部的に保持してください。
 
-**MTAの階層構造について**
+##### MTAの階層構造について #####
 * 箇条書きの構造と条文番号が階層関係を表現しています。例えば、1.1 は 1の子要素です。
 * 条文がコロンで終了している条文は、その子階層と関係があることを考慮して条文の意味を理解してください。以下が階層構造の例です。
   *   1.2 UK Biobank warrants to the Applicant that for the purposes of this MTA:
@@ -64,11 +62,11 @@
       *   a) make no warranty or representation, express or implied as to the accuracy, quality or comprehensiveness of these Data;
       *   b) exclude to the fullest extent permitted by law all liability for actions, claims, proceedings, demands, losses (including but not limited to loss of profit), costs, awards damages and payments made by the Recipient that may arise (whether directly or indirectly) in any way whatsoever from the Recipients use of these Data or from the unavailability of, or break in access to, these Data for whatever reason and;
       *   c) bear no responsibility for the further analysis or interpretation of these Data.
-*   **2. Cost Jor No Cost**
+ *   **2. Cost Jor No Cost**
     *   a. Registry is making the Data available to Researcher at no cost to Researcher. [If payment is desired, it may be beneficial to add payment terms, e.g., invoicing procedure, payment due dates].
     *   b. Researcher bears all costs and expenses incurred by Researcher to access and use the Data, and conduct the Research.
 
-**主要コンセプトリスト**
+##### 主要コンセプトリスト #####
 
 *  1. 契約の基本事項
     *   **1.1. Data/Materialsの提供:** 提供の合意、範囲、期間に関する規定。
@@ -95,7 +93,7 @@
     *   **5.3. 紛争解決:** 当事者間で紛争が生じた場合の解決手続き（協議、調停、裁判管轄等）。
     *   **5.4. その他:** 通知方法、不可抗力、完全合意条項など。
 
-**ステップ2: 比較分析と統合条文の作成**
+#### ステップ2: 比較分析と統合条文の作成
 *   ステップ1のマッピング結果に基づき、UKBBの条文順に一行ずつ最後まで処理を行います。
 *   **対応する条文が存在する場合:**
     *   **コンセプト** UKBB, EGA, NIH間で共有する主要コンセプトのカテゴリを記述してください。
@@ -113,7 +111,7 @@
                   * UKBB由来の文言: color: black;
                   * EGA由来の文言: color: blue;
                   * NIH由来の文言: color: green;
-                  * 統合して文言を変更しても文意が変わらない場合は、MTAの色（black, blue, green）を適用すること。
+                  * 統合して文言を変更しても文意が変わらない場合は、由来するMTAの色（black, blue, green）を適用すること。
                * 統一用語：汎用化・再構成部分（赤）とせず、文脈上ベースとなったMTAの色を適用してください。
                * 残りの部分: color: red;
                   *  以下のルールに該当しない、<span style='color: red;'>AIが文脈を整理・結合するために独自に追加した語句（接続詞、関係詞、一般的な動詞句など）</span>は赤色で示します。
@@ -131,11 +129,11 @@
     *   UKBBのMTAの条文を統合条文として記載し、「一致点」「不一致点」は「他MTAに直接対応する条文なし」などと記述してください。
     *   統一用語に置き換えてください。
 
-**ステップ3: 残存条文の処理**
+#### ステップ3: 残存条文の処理
 *   UKBBの全条文を処理した後、まだどの条文にも対応付けられていないEGAおよびNIHの条文を抽出し、テーブルの末尾に追加してください。
 *   EGAとNIHの間でもステップ2と同様に対応関係を抽出してください。
 
-**ステップ4: 出力**
+#### ステップ4: 出力
 *   最終結果を**単一の完全なHTMLコードブロック**として出力してください。
 *   出力に「外国統合MTA/DTA」という名前をつけて、以降の質問で参照できるようにしてください。
 *   太字と指定された場合は、<strong>タグで囲ってください。
