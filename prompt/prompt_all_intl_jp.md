@@ -1,10 +1,10 @@
-## UKBB、EGA、NIHのMTAの条文対応表と統合条文の作成
+## 外国統合MTAと日本MTAの条文対応表と統合条文の作成
 
 ### プロンプトをfixするまでのテストランについて
 
 本番モードです。以下を無視して、全文を出力してください。
 
-* ステップ１及び２とも外国統合MTAのI-03.9までと、ステップ3: 残存条文の処理を実施してください。
+* ステップ１及び２とも外国統合MTAの先頭からI-03.9までと、ステップ3: 残存条文の処理を実施してください。
 * 改良すべきプロンプトの修正案を出力してください。修正が必須でなければその旨も教えてください。
 
 ### プロンプトの全体構成
@@ -13,53 +13,31 @@
 あなたは、複数のMTA（Material Transfer Agreement）を比較・分析し、統合する専門家です。目的は以下の外国統合MTAと国内MTAの対応表を作成し、外国と日本の統合MTAを作成することです。
 
 #### 2. 入力定義
-*   外国統合MTA: `intl.html`
-以下の表形式の情報になっています。
-|列名|値の内容|言語|
-|---|---|---|
-|統合No.|外国統合MTA条文|英語|
-|統合題名英|統合条文題名|英語|
-|統合題名日|統合条文題名|日本語|
-|統合英|統合条文|英語|
-|統合日|統合条文|日本語|
-|統合手順|統合手順|日本語|
-|コンセプト|対応する条文間で共有する主要コンセプト|
-|一致点|対応する条文の一致点|日本語|
-|不一致点|対応する条文の不一致点|日本語|
-|UKBB No.|UKBB条文番号|英語|
-|UKBB英|UKBB原文|英語|
-|UKBB日|UKBB原文|日本語|
-|EGA No.|EGA条文番号|英語|
-|EGA英|EGA原文|英語|
-|EGA日|EGA原文|日本語|
-|NIH No.|NIH条文番号|英語|
-|NIH英|NIH原文|英語|
-|NIH日|NIH原文|日本語|
-
-*   handbook_MTA: `mta_handbook.md`
-*   ToMMo_MTA: `東北メディカルメガバンク機構.md`
-*   BBJ_MTA: `バイオバンク・ジャパン.md`
-*   NCNP_MTA: `国立精神・神経医療研究センター.md`
-*   以上の４つのMTAを国内MTAと呼びます。
+*  外国統合MTA: `intl.md`
+*  国内MTA
+    *   handbook_MTA: `mta_handbook.md`
+    *   ToMMo_MTA: `東北メディカルメガバンク機構.md`
+    *   BBJ_MTA: `バイオバンク・ジャパン.md`
+    *   NCNP_MTA: `国立精神・神経医療研究センター.md`
 
 * 　入力ファイルが読み込まれていない場合は、そのことを指摘して処理を中止してください。
 
 #### 3. 用語統一の事前定義
 統合条文の作成に先立ち、以下の**統一用語対応表**をすべての処理の前提として使用してください。これにより、出力の一貫性を確保します。
 
-| 統合用語 | UKBB | EGA | NIH |
-| :--- | :--- | :--- | :--- |
-| **Data** | Materials | Data | dataset(s) |
-| **Applicant** | Applicant | User Institution | Requester |
-| **Principal Investigator (PI)** | Applicant PI | User | PI |
-| **Approved Researchers** | Applicant Researchers | Authorised Personnel | Approved Users |
-| **Approved Research Project** | Approved Research Project | Project | approved research project |
-| **Data Provider** | UK Biobank | Data Producers | NIH, Submitting Investigator(s) |
-| **Intellectual Property (IP)** | Intellectual Property Rights (IPRs) | intellectual property | intellectual property (IP) |
-| **Breach**|	breach|	breach|	Policy Compliance Violations|
-| **Termination**|	terminate|	terminate|	terminate, Project Close-out|
-| **Publication of Findings** |	publication of Findings|	Publications	Dissemination of Research Findings|
-| **Data Derivatives**|	Results Data, Other Data|	material derived from these Data|	Data Derivatives|
+| 統合用語 (英) | 統合用語 (日) | 外国統合 (Foreign) | ハンドブック (Handbook) | ToMMo | BBJ | NCNP |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Data Provider** | **データ提供者** | Data Provider | 甲 | 甲、乙 | 甲 | 甲 |
+| **Applicant** | **申請者** | Applicant | 乙 | 丙 | 乙 | 乙 |
+| **Data** | **データ等** | Data, Materials, dataset(s) | 本試料・情報 | 本研究試料等 | 本有体物 | 本試料等 |
+| **Principal Investigator (PI)** | **研究責任者** | Principal Investigator (PI) | 研究代表者 | （研究の実施者として丙） | 研究責任者 | （研究者として乙） |
+| **Approved Researchers** | **承認済み研究者** | Approved Researchers | 共同研究機関の者 | 共同研究者 | 研究分担者、研究協力者 | 本研究に従事する者 |
+| **Approved Research Project** | **承認済み研究** | Approved Research Project | 研究課題 | 本研究 | 本研究 | 本研究 |
+| **Intellectual Property (IP)** | **知的財産権** | Intellectual Property (IP), IPRs | 知的財産権 | 知的財産権 | 知的財産権 | 知的財産権 |
+| **Breach** | **契約違反** | Breach | 違反 | 違反 | 違反 | 違反 |
+| **Termination** | **契約終了** | Termination, terminate | 契約終了、解除 | 契約終了、契約解除 | 終了、解除 | 契約終了 |
+| **Publication of Findings** | **研究成果の公表** | Publication of Findings | 研究成果等の公表 | 研究成果の公表 | 成果の公表 | 研究成果の公表 |
+| **Data Derivatives** | **派生データ** | Results Data, Other Data | （研究成果） | 本成果 | 研究開発成果 | 研究成果 |
 
 
 #### 4. 処理ステップの詳細化
@@ -128,7 +106,7 @@
                * 由来元の文言（最優先）
                   * 外国統合MTA由来の文言: color: black;
                   * 日本MTAの文言: color: blue;
-                  * 統合して文言を変更しても文意が変わらない場合は、MTAの色（black, blue, green）を適用すること。
+                  * 統合して文言を変更しても文意が変わらない場合は、MTAの色（black, blue）を適用すること。
                * 統一用語：汎用化・再構成部分（赤）とせず、文脈上ベースとなったMTAの色を適用してください。
                * 残りの部分: color: red;
                   *  以下のルールに該当しない、<span style='color: red;'>AIが文脈を整理・結合するために独自に追加した語句（接続詞、関係詞、一般的な動詞句など）</span>は赤色で示します。
@@ -148,19 +126,25 @@
 
 **ステップ3: 残存条文の処理**
 *   外国統合MTAの全条文を処理した後、まだどの条文にも対応付けられていない日本MTAの条文を抽出し、テーブルの末尾に追加してください。
-*   日本MTAの間でもステップ2と同様に対応関係を抽出してください。
+*   日本MTAの間の対応関係をステップ2と同様の手順でを抽出してください。
+*   全ての日本MTAの条文がテーブルに出力されるようにしてください。
 
 **ステップ4: 出力**
 *   最終結果を**単一の完全なHTMLコードブロック**として出力してください。
-*   出力に「外国統合MTA/DTA」という名前をつけて、以降の質問で参照できるようにしてください。
+*   出力に「外日統合MTA/DTA」という名前をつけて、以降の質問で参照できるようにしてください。
 *   太字と指定された場合は、<strong>タグで囲ってください。
 *   テーブルの各列の定義は以下の通りです。
 
+*外国統合No.:** I-08.01
+    *   **:** Confidentiality of Applicant's Information
+    *   **:** 申請者の情報の秘密保持
+    *   **外国統合英
+
 |列名|値の内容|言語|
 |---|---|---|
-|統合No.|外国統合MTA条文|英語|
-|統合題名英|統合条文題名|英語|
-|統合題名日|統合条文題名|日本語|
+|統合No.|外国統合No.|英語|
+|統合題名英|外国統合題名英|英語|
+|統合題名日|外国統合題名日|日本語|
 |統合英|外日統合条文|英語|
 |統合日|外日統合条文|日本語|
 |統合手順|統合手順|日本語|
@@ -174,6 +158,9 @@
 |BBJ|BBJ_MTAの条文|日本語|
 |NCNP|NCNP_MTAの条文|日本語|
 
+* 統合No.は、外国統合No.を入れてください。存在しない場合は、I-Jで始まるprefixをつけてください。
+* 統合題名英は外国統合題名英を入れてください。ない場合は作成してください。
+* 統合題名日は外国統合題名日を入れてください。ない場合は作成してください。
 * 統合条文題名は、統合条文の内容を10文字程度でタイトルをつけてください。
 * UKBB No., EGA No., NIH No. について
   * 条文番号の格桁が２桁になるように１桁の場合は先頭に0をつけます。以下が例です
@@ -182,7 +169,7 @@
     * 1.1.2 → 01.01.02
 * 原文の色は以下の通りにしてください。
   * 外国統合MTA原文: color: black;
-  * 日本MTA原文: color: red;
+  * 日本MTA原文: color: blue;
 *   原文を表示する条文中で、特定の国・地域に固有の法律、規制、機関名（例: Human Tissue Act 2004, NIH, EU embargo）に関する文書は太字にしてください。
 *   複数の条文が１つのセルに入る場合は、先頭に条文番号を書き、次の文との間に改行を入れてください。
 *   最終出力前に、プロンプトの指示（特に、全条文の網羅、色分け、HTML形式など）がすべて満たされているか自己チェックしてください。
