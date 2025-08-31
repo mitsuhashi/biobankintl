@@ -8,27 +8,25 @@
 *  国内MTA
     *   handbook_MTA: `mta_handbook.md`
     *   ToMMo_MTA: `東北メディカルメガバンク機構.md`
-    *   BBJ_MTA: `バイオバンク・ジャパン.md`
-    *   NCNP_MTA: `国立精神・神経医療研究センター.md`
 
 * 　入力ファイルが読み込まれていない場合は、そのことを指摘して処理を中止してください。
 
 ### 3. 用語統一の事前定義
 統合条文の作成に先立ち、以下の**統一用語対応表**をすべての処理の前提として使用してください。これにより、出力の一貫性を確保します。
 
-| 統合用語 (英) | 統合用語 (日) | 外国統合 (Foreign) | ハンドブック (Handbook) | ToMMo | BBJ | NCNP |
+| 統合用語 (英) | 統合用語 (日) | 外国統合 (Foreign) | ハンドブック (Handbook) | ToMMo |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Data Provider** | **データ提供者** | Data Provider | 甲 | 甲、乙 | 甲 | 甲 |
 | **Applicant** | **申請者** | Applicant | 乙 | 丙 | 乙 | 乙 |
-| **Data** | **データ等** | Data, Materials, dataset(s) | 本試料・情報 | 本研究試料等 | 本有体物 | 本試料等 |
-| **Principal Investigator (PI)** | **研究責任者** | Principal Investigator (PI) | 研究代表者 | （研究の実施者として丙） | 研究責任者 | （研究者として乙） |
-| **Approved Researchers** | **承認済み研究者** | Approved Researchers | 共同研究機関の者 | 共同研究者 | 研究分担者、研究協力者 | 本研究に従事する者 |
-| **Approved Research Project** | **承認済み研究** | Approved Research Project | 研究課題 | 本研究 | 本研究 | 本研究 |
-| **Intellectual Property (IP)** | **知的財産権** | Intellectual Property (IP), IPRs | 知的財産権 | 知的財産権 | 知的財産権 | 知的財産権 |
+| **Data** | **データ等** | Data, Materials, dataset(s) | 本試料・情報 | 本研究試料等 |
+| **Principal Investigator (PI)** | **研究責任者** | Principal Investigator (PI) | 研究代表者 | （研究の実施者として丙） |
+| **Approved Researchers** | **承認済み研究者** | Approved Researchers | 共同研究機関の者 | 共同研究者 |
+| **Approved Research Project** | **承認済み研究** | Approved Research Project | 研究課題 | 本研究 |
+| **Intellectual Property (IP)** | **知的財産権** | Intellectual Property (IP), IPRs | 知的財産権 | 知的財産権 |
 | **Breach** | **契約違反** | Breach | 違反 | 違反 | 違反 | 違反 |
-| **Termination** | **契約終了** | Termination, terminate | 契約終了、解除 | 契約終了、契約解除 | 終了、解除 | 契約終了 |
-| **Publication of Findings** | **研究成果の公表** | Publication of Findings | 研究成果等の公表 | 研究成果の公表 | 成果の公表 | 研究成果の公表 |
-| **Data Derivatives** | **派生データ** | Results Data, Other Data | （研究成果） | 本成果 | 研究開発成果 | 研究成果 |
+| **Termination** | **契約終了** | Termination, terminate | 契約終了、解除 | 契約終了、契約解除 |
+| **Publication of Findings** | **研究成果の公表** | Publication of Findings | 研究成果等の公表 | 研究成果の公表 |
+| **Data Derivatives** | **派生データ** | Results Data, Other Data | （研究成果） | 本成果 |
 
 
 ### 4. 処理ステップの詳細化
@@ -143,8 +141,6 @@
 |外国統合MTA|外国統合MTAの条文|日本語|
 |ハンドブック|handbook_MTAの条文|日本語|
 |ToMMo|ToMMo_MTAの条文|日本語|
-|BBJ|BBJ_MTAの条文|日本語|
-|NCNP|NCNP_MTAの条文|日本語|
 
 * 統合No.は、外国統合No.を入れてください。存在しない場合は、I-Jで始まるprefixをつけてください。
 * 統合題名英は外国統合題名英を入れてください。ない場合は作成してください。
@@ -157,7 +153,7 @@
     * 1.1.2 → 01.01.02
 * 原文の色は以下の通りにしてください。
   * 外国統合MTA: color: black;
-  * ハンドブック、ToMMo, BBJ, NCNP: color: blue;
+  * ハンドブック、ToMMo: color: blue;
   * 条文中で、特定の国・地域に固有の法律、規制、機関名（例: Human Tissue Act 2004, NIH, EU embargo）に関する文章は太字にしてください。
 *   複数の条文が１つのセルに入る場合は、先頭に条文番号を書き、次の文との間に改行を入れてください。
 *   最終出力前に、プロンプトの指示（特に、全条文の網羅、色分け、HTML形式など）がすべて満たされているか自己チェックしてください。
@@ -169,7 +165,7 @@
 * [ ] バッファサイズの上限を超えてしまって入力を原文通りに記憶できないなどの理由で入力内容を割愛していませんか。
 * [ ] 列の色分けルールは守られていますか？
 * [ ] 内容が競合し統合できない条文は、「統合題名英」、「統合題名日」列で{案1, 案2}の形式で併記されていますか？
-* [ ]「一致点」「不一致点」の列は、具体的かつ明確な言葉で記述されていますか？
+* [ ] 「一致点」「不一致点」の列は、具体的かつ明確な言葉で記述されていますか？
 * [ ] 外国統合No.が付与された条文は全て出力されていますか。
 * [ ] 日本MTAの原文は少なくともどこか１ヵ所で出力されていますか。
 
