@@ -5,8 +5,11 @@ import re
 # HTML_PATH = "intl.html"
 # XLSX_PATH = "intl.xlsx"
 
-HTML_PATH = "intl_jp.html"
-XLSX_PATH = "intl_jp.xlsx"
+#HTML_PATH = "intl_jp.html"
+#XLSX_PATH = "intl_jp.xlsx"
+
+HTML_PATH = "intl_jp_5-6.html"
+XLSX_PATH = "intl_jp_5-6.xlsx"
 
 
 def normalize_color(value: str | None) -> str | None:
