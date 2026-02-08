@@ -7,7 +7,7 @@ GA4GH Data Access Agreement  (以下、GA4GH)とUKバイオバンクMTA（以下
 以下のファイルをプロンプトにアップロードします。
 
 * GA4GH条文ファイル：mta_ga4gh_ja.md (https://raw.githubusercontent.com/mitsuhashi/biobankintl/refs/heads/main/mta/mta_ga4gh_ja.md)
-* UKBB条文ファイル： mta_ukbb_ja.md (https://raw.githubusercontent.com/mitsuhashi/biobankintl/refs/heads/main/mta/mta_ga4gh_ja.md)
+* UKBB条文ファイル： mta_ukbb_ja.md (https://raw.githubusercontent.com/mitsuhashi/biobankintl/refs/heads/main/mta/mta_ukbb_ja.md)
 * 第1回レビュー会議議論: 第1回レビュー会議議論.pdf
 
 
