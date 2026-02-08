@@ -6,7 +6,7 @@ GA4GH Data Access Agreement  (以下、GA4GH)とバイオバンクハンドブ�
 
 * GA4GH条文ファイル：https://raw.githubusercontent.com/mitsuhashi/biobankintl/refs/heads/main/mta/mta_ga4gh_ja.md
 * BBHB条文ファイル： https://raw.githubusercontent.com/mitsuhashi/biobankintl/refs/heads/main/mta/mta_handbook.md
-* 参考資料：GA4GHとUKBB対応表（第1回レビュー会議議論を含む）： https://github.com/mitsuhashi/biobankintl/blob/main/mta/biobank_handbook_template_mta.pdf
+* 参考資料：GA4GHとUKBB対応表（第1回レビュー会議議論を含む）： https://github.com/mitsuhashi/biobankintl/blob/main/output/ga4gh_ukbb.csv
 
 ### 出力ファイル
 
