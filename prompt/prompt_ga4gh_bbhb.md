@@ -6,7 +6,7 @@ GA4GH Data Access Agreement  (以下、GA4GH)とバイオバンクハンドブ�
 
 * GA4GH条文ファイル：https://raw.githubusercontent.com/mitsuhashi/biobankintl/refs/heads/main/mta/mta_ga4gh_ja.md
 * BBHB条文ファイル： https://raw.githubusercontent.com/mitsuhashi/biobankintl/refs/heads/main/mta/mta_handbook.md
-* 参考資料：GA4GHとUKBB対応表（第1回レビュー会議議論を含む）： ga4gh_bbhb.pdf
+* 参考資料：GA4GHとUKBB対応表（第1回レビュー会議議論を含む）： https://github.com/mitsuhashi/biobankintl/blob/main/mta/biobank_handbook_template_mta.pdf
 
 ### 出力ファイル
 
@@ -25,7 +25,7 @@ GA4GH Data Access Agreement  (以下、GA4GH)とバイオバンクハンドブ�
 | AI提案2 | AIが作成した今後の方針案（AIの自由提案） |  |
 | 第２回レビュー会議事メモ | 第２回レビュー会議議論の内容を会議を進めながら記入する（対応表作成時点では空欄） |  |
 
-出力ファイル作成時の注意点
+### 出力ファイル作成時の注意点
 * GA4GH の条文番号の順番に表示されます				
 * 判定が「GA4GHのみ」の場合、BBHB番号およびBBHB条文は、「なし」となります。				
 * 判定が「BBHBのみ」の場合、該当するBBHBの条文は最も近い内容のGA4GH条文の下に表示されます。その場合、GA4GH番号とGA4GH条文は、「なし」となります。適当な挿入位置が見つからない場合は表の末尾に表示されます。
